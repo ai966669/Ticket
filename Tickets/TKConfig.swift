@@ -28,4 +28,10 @@ class TKConfig: NSObject {
     /// 注册
     static let URLUserUserRegist="/user/user/regist"
     static let URLUserUserLogin="/user/user/login"
+    static let URLUserUserInfo="/user/user/info"
+     /// 密码重置
+    static let URLUserValidateReset="/user/validate/reset"
+     /// 发送注册验证码
+    static let URLUserValidateRegist="/user/validate/regist"
+    
 }

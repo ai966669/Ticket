@@ -69,7 +69,7 @@
         <!--Reigist View Controller-->
         <scene sceneID="OnD-Yr-od3">
             <objects>
-                <viewController id="qb5-bk-ssE" customClass="ReigistViewController" customModule="Tickets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReigistViewController" id="qb5-bk-ssE" customClass="ReigistViewController" customModule="Tickets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gdl-JE-apy"/>
                         <viewControllerLayoutGuide type="bottom" id="8e4-LA-7qK"/>
@@ -118,6 +118,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-lO-c8p">
+                                <rect key="frame" x="308" y="338" width="75" height="30"/>
+                                <state key="normal" title="获取验证码"/>
+                                <connections>
+                                    <action selector="codeRequest:" destination="qb5-bk-ssE" eventType="touchUpInside" id="6ls-YV-sGc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -130,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTw-JM-sfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="437" y="224"/>
+            <point key="canvasLocation" x="627" y="111"/>
         </scene>
     </scenes>
 </document>

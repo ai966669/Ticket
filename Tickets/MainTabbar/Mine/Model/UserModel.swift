@@ -50,11 +50,12 @@ class UserModel: TopModel {
         //let token : (str:String,isHaveToken:Bool) = DatabaseUserDefaults.isHaveToken()
        
     }
-    class func regist(phone:String,psw:String,code:String,fail:(failCode:Int)->Void,succes:(succescode:Int)->Void) {
+    class func regist(phone:String,psw:String,code:String,success:SessionSuccessBlock,failure:SessionFailBlock) {
         
         let param =   TopModel.specialProcess(["phone":phone,"password":psw,"validate_code":code])
 
         TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLUserUserRegist, success: { (model) in
+    
             SVProgressHUD.showErrorWithStatus("asdf")
             }) { (code) in
             SVProgressHUD.showErrorWithStatus("asdfasdfas")

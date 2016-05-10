@@ -214,6 +214,7 @@ class TopModel: NSObject {
                 }
             }
             if response?.statusCode != 0 && response?.statusCode != 200{
+                
                 SVProgressHUD.showErrorWithStatus("网络异常")
                 Log(response)
                 Log(error)

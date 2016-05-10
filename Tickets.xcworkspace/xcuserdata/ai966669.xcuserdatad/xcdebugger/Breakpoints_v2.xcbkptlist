@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tickets/MainTabbar/Mine/Model/UserModel.swift"
-            timestampString = "484500982.846852"
+            filePath = "Tickets/CommandMethod/TopModel.swift"
+            timestampString = "484580933.683973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "loginByPsw(_:password:failInLogin:success:)"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,46 +73,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tickets/AppDelegate.swift"
-            timestampString = "484501060.103166"
+            filePath = "Tickets/CommandMethod/TopModel.swift"
+            timestampString = "484581153.884838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tickets/MainTabbar/Mine/Model/UserModel.swift"
+            timestampString = "484583028.294844"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loginByPsw(_:password:failInLogin:success:)"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Tickets.AppDelegate.application (__ObjC.UIApplication, didFinishLaunchingWithOptions : Swift.Optional&lt;Swift.Dictionary&lt;__ObjC.NSObject, Swift.AnyObject&gt;&gt;) -&gt; Swift.Bool"
+                  symbolName = "static Tickets.UserModel.loginByPsw (Swift.String, password : Swift.String, failInLogin : () -&gt; (), success : () -&gt; ()) -&gt; ()"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/AppDelegate.swift"
-                  timestampString = "484501121.246033"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/MainTabbar/Mine/Model/UserModel.swift"
+                  timestampString = "484583694.490389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "368">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "394">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Tickets.AppDelegate.(application (__ObjC.UIApplication, didFinishLaunchingWithOptions : Swift.Optional&lt;Swift.Dictionary&lt;__ObjC.NSObject, Swift.AnyObject&gt;&gt;) -&gt; Swift.Bool).(closure #1)"
+                  symbolName = "static Tickets.UserModel.(loginByPsw (Swift.String, password : Swift.String, failInLogin : () -&gt; (), success : () -&gt; ()) -&gt; ()).(closure #1)"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/AppDelegate.swift"
-                  timestampString = "484501121.246165"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/MainTabbar/Mine/Model/UserModel.swift"
+                  timestampString = "484583694.490512"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tickets/CommandMethod/TopModel.swift"
+            timestampString = "484583170.831224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
