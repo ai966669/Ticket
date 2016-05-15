@@ -58,75 +58,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tickets/CommandMethod/TopModel.swift"
-            timestampString = "484580933.683973"
+            timestampString = "484717249.143433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
             landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tickets/CommandMethod/TopModel.swift"
-            timestampString = "484581153.884838"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
-            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tickets/MainTabbar/Mine/Model/UserModel.swift"
-            timestampString = "484583028.294844"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "loginByPsw(_:password:failInLogin:success:)"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Tickets.UserModel.loginByPsw (Swift.String, password : Swift.String, failInLogin : () -&gt; (), success : () -&gt; ()) -&gt; ()"
+                  symbolName = "function signature specialization &lt;Arg[6] = Value Promoted from Box&gt; of static Tickets.TopModel.(universalRequest (requestMethod : Tickets.Method, dic : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, urlMethod : Swift.String, success : (model : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure : (code : Swift.Int) -&gt; ()) -&gt; Tickets.Request).(closure #2)"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/MainTabbar/Mine/Model/UserModel.swift"
-                  timestampString = "484583694.490389"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/CommandMethod/TopModel.swift"
+                  timestampString = "485024702.068003"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "394">
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "2736">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static Tickets.UserModel.(loginByPsw (Swift.String, password : Swift.String, failInLogin : () -&gt; (), success : () -&gt; ()) -&gt; ()).(closure #1)"
+                  symbolName = "function signature specialization &lt;Arg[6] = Value Promoted from Box&gt; of static Tickets.TopModel.(universalRequest (requestMethod : Tickets.Method, dic : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, urlMethod : Swift.String, success : (model : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure : (code : Swift.Int) -&gt; ()) -&gt; Tickets.Request).(closure #2)"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/Tickets/Tickets/MainTabbar/Mine/Model/UserModel.swift"
-                  timestampString = "484583694.490512"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/CommandMethod/TopModel.swift"
+                  timestampString = "485024702.068159"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "3040">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -137,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tickets/CommandMethod/TopModel.swift"
-            timestampString = "484583170.831224"
+            filePath = "Tickets/CommandMethod/MCommandRequest.swift"
+            timestampString = "485022389.243971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "applicationStart(_:failure:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

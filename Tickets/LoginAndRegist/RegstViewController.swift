@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReigistViewController: UIViewController {
+class RegistViewController: UIViewController {
     @IBOutlet var txtFldAcount: UITextField!
     @IBOutlet var txtFldPsw: UITextField!
     @IBOutlet var txtFldCode: UITextField!

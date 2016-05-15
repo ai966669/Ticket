@@ -12,6 +12,9 @@ func Log<T>(message: T) {
     print("\(message)")
 //    #endif
 }
+class MsgShow: NSObject {
+    static let ErrAnalysisServerData2Dic="返回数据有问题，服务器哥们儿要背锅了...."
+}
 class TKConfig: NSObject {
     static let environmentIsTest=true
     static let UD_LastTimeSignSession_id = "UD_LastTimeSignSession_id"
@@ -25,13 +28,25 @@ class TKConfig: NSObject {
             return value
         }
     }
+    
+    static let QiniuUpToken=""
+    static let QiniuUpTokenTime="QiniuUpTokenTime" 
     /// 注册
     static let URLUserUserRegist="/user/user/regist"
+     /// 登陆
     static let URLUserUserLogin="/user/user/login"
+     /// token登陆 ，获取个人信息
     static let URLUserUserInfo="/user/user/info"
      /// 密码重置
     static let URLUserValidateReset="/user/validate/reset"
      /// 发送注册验证码
     static let URLUserValidateRegist="/user/validate/regist"
+     /// banner列表
+    static let URLBannerBannerList="/banner/banner/list"
+    /// 卡券列表
+    static let URLCouponCouponList="/coupon/coupon/list"
+    static let URLTaskMarkMark="/task/mark/mark"
+    static let URLIndexIndexConfig="/index/index/config"
+    
     
 }

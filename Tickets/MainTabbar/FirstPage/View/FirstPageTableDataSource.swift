@@ -24,7 +24,7 @@ extension FirstPageTableDataSource:UITableViewDataSource{
     
     @objc func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return dataSource.ticketsTitle.count;
+        return dataSource.tickets.count;
     }
     
     
@@ -37,7 +37,7 @@ extension FirstPageTableDataSource:UITableViewDataSource{
         tableView.registerNib(uiNibFirstPageTableViewCell, forCellReuseIdentifier: cellId)
         
         if let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as? FirstPageTableViewCell{
-            cell.lblTitle!.text=dataSource.ticketsTitle[indexPath.row]
+            cell.lblTitle!.text=dataSource.tickets[indexPath.row].title
             return cell
         }else{
             return FirstPageTableViewCell()

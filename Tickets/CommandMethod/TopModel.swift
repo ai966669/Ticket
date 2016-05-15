@@ -137,15 +137,15 @@ class TopModel: NSObject {
         if UserModel.shareManager.session_id != ""{
             params["session_id"] = UserModel.shareManager.session_id
         }else{
-            let token : (session_id:String,isHaveToken:Bool) = DatabaseUserDefaults.isHaveSession_id()
+            let token : (session_id:String,isHaveToken:Bool) = DatabaseUserDefaults.shareManager.isHaveSession_id()
             if  token.isHaveToken{
                 params["session_id"] = token.session_id
             }else{
                 params["session_id"] = "default"
             }
         }
-        if UserModel.shareManager.uid != ""{
-            params["userId"] = UserModel.shareManager.uid
+        if UserModel.shareManager.id != 0{
+            params["userId"] = "\(UserModel.shareManager.id)"
         }else {
             let  lastUserId = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeUserId) as? String
             if (lastUserId != "") && (lastUserId != nil) {
@@ -234,6 +234,7 @@ class TopModel: NSObject {
                 
                 do {
                     if	let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves) as? [String : AnyObject]{
+                        Log("url:\(url)json:\(json)")
                         guard let ret_code = json["status"] as? Int else{
                             Log("返回数据无status")
                             failure(code: codeErrorReturn)

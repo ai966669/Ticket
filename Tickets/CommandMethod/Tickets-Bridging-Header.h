@@ -16,3 +16,7 @@
 
 //提示
 #import "SVProgressHUD.h"
+/**
+ *  七牛
+ */
+#import <QiniuSDK.h>

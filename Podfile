@@ -4,10 +4,10 @@
 # use_frameworks!
 
 target 'Tickets' do
-pod 'SVProgressHUD'
+pod 'SVProgressHUD', '~> 2.0'
 pod 'SDWebImage', '~>3.7'
 pod 'CocoaSecurity'
-
+pod "Qiniu", "~> 7.0"
 end
 
 target 'TicketsTests' do

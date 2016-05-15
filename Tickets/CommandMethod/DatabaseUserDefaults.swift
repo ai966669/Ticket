@@ -9,7 +9,11 @@
 import UIKit
 
 class DatabaseUserDefaults: NSObject {
-    class func isHaveSession_id() -> (String,Bool){
+    static let shareManager = DatabaseUserDefaults()
+    func setSession_id(session_id:String){
+        NSUserDefaults.standardUserDefaults().setValue(session_id, forKey: TKConfig.UD_LastTimeSignSession_id)
+    }
+    func isHaveSession_id() -> (String,Bool){
         if let session_id = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeSignSession_id) as? String {
             if session_id != ""  {
                 return (session_id,true)
@@ -17,4 +21,9 @@ class DatabaseUserDefaults: NSObject {
         }
         return ("",false)
     }
+//    func <#name#>(<#parameters#>) -> <#return type#> {
+//        <#function body#>
+//    }
+//    
+//    nsuserda
 }

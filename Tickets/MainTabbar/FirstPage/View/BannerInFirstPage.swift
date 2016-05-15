@@ -17,6 +17,8 @@ class BannerInFirstPage: UIScrollView {
         super.init(frame:frame)
         self.pagingEnabled=true
         self.scrollEnabled=true
+        self.showsVerticalScrollIndicator=false;
+        self.showsHorizontalScrollIndicator=false;
         contentSize=CGSizeMake(frame.width*CGFloat(imgUrls.count), frame.height)
         for i in 0...imgUrls.count-1 {
             let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, frame.width, frame.height))

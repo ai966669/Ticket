@@ -21,10 +21,12 @@ class LoginViewController: UIViewController {
     }
     @IBAction func tryLogin(sender: AnyObject) {
 //        SVProgressHUD.showErrorWithStatus("asdf")
-        UserModel.loginByPsw(txtFldPsw.text!, password: txtFldPhone.text!, failInLogin: {
-                print("通过密码登陆失败")
-            }) { 
-                print("通过密码登陆成功")
+        UserModel.loginByPsw(txtFldPhone.text!, password:txtFldPsw.text! , success: {_ in 
+            if  let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+                appDelegate.setRootViewControllerisTabbar()
+            }
+            }) { _ in
+                   print("通过密码登陆失败")
         }
     }
     

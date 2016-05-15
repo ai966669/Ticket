@@ -11,12 +11,12 @@ import UIKit
 class FirstPageViewController: UIViewController {
     var banner:BannerInFirstPage!
     var pageControl:UIPageControl!
+    var aMFirstPageTableView=MFirstPageTableView()
     var tableviewTicketFisrtPage:UITableView!
     var aFirstPageTableDataSource:FirstPageTableDataSource!
     override func viewDidLoad() {
         super.viewDidLoad()
         initBanner()
-        initTableviewTicketFisrtPage()
         // Do any additional setup after loading the view.
     }
     func initPageControl(imgUrls:[NSURL]){
@@ -29,16 +29,27 @@ class FirstPageViewController: UIViewController {
         view.addSubview(pageControl)
     }
     func  initBanner(){
-        let imgUrls:[NSURL] = [ NSURL (string: "http://b.hiphotos.baidu.com/image/pic/item/b64543a98226cffc47102fb2bb014a90f603eafc.jpg")!,NSURL (string: "http://f.hiphotos.baidu.com/image/h%3D200/sign=b46522b25c82b2b7b89f3ec401accb0a/b2de9c82d158ccbf79a00f8c1cd8bc3eb1354163.jpg")!]
-        banner = BannerInFirstPage.init(frame: CGRectMake(0, (navigationController?.navigationBar.frame.height)!, ScreenW, ScreenH*0.3), imgUrls:imgUrls)
-        banner.delegate=self
-        view.addSubview(banner)
-        initPageControl(imgUrls)
+        
+        aMFirstPageTableView.getDataForBanner { [weak self]  () in
+            var imgUrls : [NSURL] = []
+            if (self != nil && self!.aMFirstPageTableView.banners != nil){
+                for banner in self!.aMFirstPageTableView.banners{
+                    imgUrls.append(NSURL.init(string: banner.image)!)
+                }
+            }
+            self!.banner = BannerInFirstPage.init(frame: CGRectMake(0, (self!.navigationController?.navigationBar.frame.height)!, ScreenW, ScreenH*0.3), imgUrls:imgUrls)
+            self!.banner.delegate=self
+            self!.initPageControl(imgUrls)
+            self!.view.addSubview(self!.banner)
+            self!.initTableviewTicketFisrtPage()
+        }
+ 
     }
     func initTableviewTicketFisrtPage(){
-        tableviewTicketFisrtPage=UITableView.init(frame: CGRectMake(0, banner.frame.height+banner.frame.origin.y, ScreenW, ScreenH-banner.frame.height-banner.frame.origin.y-HeightTabbar))
-        MFirstPageTableView.getData { (aMFirstPageTableView) in
-            self.aFirstPageTableDataSource=FirstPageTableDataSource.init(aMFirstPageTableView: aMFirstPageTableView)
+        tableviewTicketFisrtPage=UITableView.init(frame: CGRectMake(0, banner.frame.height+banner.frame.origin.y, ScreenW, ScreenH-ScreenH*0.3-(self.navigationController?.navigationBar.frame.height)!-HeightTabbar))
+        //dohere 如何更好地分层
+        aMFirstPageTableView.getDataForTicketsList { () in
+            self.aFirstPageTableDataSource=FirstPageTableDataSource.init(aMFirstPageTableView: self.aMFirstPageTableView)
             self.tableviewTicketFisrtPage.delegate=self
             self.tableviewTicketFisrtPage.dataSource=self.aFirstPageTableDataSource
             self.view.addSubview(self.tableviewTicketFisrtPage)
@@ -46,24 +57,24 @@ class FirstPageViewController: UIViewController {
     }
     func pageControlChanged()
     {
-//        banner.contentOffset=CGPointMake(CGFloat(pageControl.currentPage)*banner.frame.width, 0)
+        //        banner.contentOffset=CGPointMake(CGFloat(pageControl.currentPage)*banner.frame.width, 0)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 extension FirstPageViewController:UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {

@@ -57,6 +57,11 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUw-Os-PuO">
+                                <rect key="frame" x="158" y="325" width="240" height="128"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="发现" image="second" id="cPa-gy-q4n"/>
@@ -78,11 +83,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8z-7V-h0H">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="250"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-Zy-9Tr">
                                         <rect key="frame" x="245" y="58" width="110" height="102"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLO-7Y-IFX">
+                                        <rect key="frame" x="77" y="102" width="30" height="30"/>
+                                        <state key="normal" title="签到"/>
+                                        <connections>
+                                            <action selector="signUp:" destination="kFK-zd-Tet" eventType="touchUpInside" id="b4v-f8-DdV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -92,12 +104,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b8z-7V-h0H" firstAttribute="top" secondItem="Is9-5a-THn" secondAttribute="topMargin" id="8t8-nQ-bFa"/>
+                            <constraint firstItem="b8z-7V-h0H" firstAttribute="top" secondItem="Is9-5a-THn" secondAttribute="topMargin" constant="64" id="8t8-nQ-bFa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b8z-7V-h0H" secondAttribute="trailing" constant="-20" id="DUn-Ca-Ewd"/>
                             <constraint firstItem="b8z-7V-h0H" firstAttribute="leading" secondItem="Is9-5a-THn" secondAttribute="leadingMargin" constant="-20" id="rIw-If-cEm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="我的" image="second" id="nmo-AL-GKo"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imgViewUserImg" destination="rmJ-Zy-9Tr" id="X3A-mj-VP1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEE-Hu-aLY" sceneMemberID="firstResponder"/>
             </objects>
