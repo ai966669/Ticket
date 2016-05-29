@@ -20,6 +20,7 @@ class BannerInFirstPage: UIScrollView {
         self.showsVerticalScrollIndicator=false;
         self.showsHorizontalScrollIndicator=false;
         contentSize=CGSizeMake(frame.width*CGFloat(imgUrls.count), frame.height)
+        if imgUrls.count >= 1{
         for i in 0...imgUrls.count-1 {
             let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, frame.width, frame.height))
             imgView.sd_setImageWithURL(imgUrls[i], placeholderImage: UIImage.init(named: "candel.jpg"), completed: { (img, err, _, _) in
@@ -30,6 +31,7 @@ class BannerInFirstPage: UIScrollView {
                 }
             })
             addSubview(imgView)
+        }
         }
     }
     override init(frame: CGRect) {

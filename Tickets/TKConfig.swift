@@ -21,7 +21,7 @@ class TKConfig: NSObject {
     static let UD_LastTimeUserId = "UD_LastTimeUserId"
     static var BaseURL:String {
         get{
-            var value="http://121.43.63.65:8888"
+            var value="http://121.43.63.65/" //192.168.1.101:8080  http://121.43.63.65:8888
             if !environmentIsTest{
                 value = "https://app.ultimavip.cn"
             }

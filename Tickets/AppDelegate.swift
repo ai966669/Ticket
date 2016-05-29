@@ -19,10 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //登出操作
         if (navMain != nil){
             navMain?.popToRootViewControllerAnimated(false)
-//            if let chatVc = navMain?.viewControllers[0] as? ChatViewController{
-//                chatVc.loginout()
-//            }
-//            mainTabBarVC=nil
         }
         self.setRootViewControllerIsLogin()
         if msgShow != ""{
@@ -36,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
 
-        setRootViewControllerIsLogin()
+        setRootViewControllerisTabbar()
         
         UserModel.loginByToken({
                 print("token失效")
@@ -44,7 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("登陆失败")
             }, success: {
                 print("登陆成功")
-                self.setRootViewControllerisTabbar()
         })
         
         // Override point for customization after application launch.

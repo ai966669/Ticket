@@ -22,6 +22,11 @@ class AvatarTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        imageView?.frame=CGRectMake(0, 0, 60, 60)
+        super.layoutSubviews()
+        imageView?.frame=CGRectMake(10, 10, frame.height-20, frame.height-20)
+        imageView!.userInteractionEnabled=true
+        imageView?.image =  UIImage.init(named: "candel.jpg")
+        textLabel?.text=UserModel.shareManager.username
+        detailTextLabel?.text="用户id:\(UserModel.shareManager.id)"
     }
 }

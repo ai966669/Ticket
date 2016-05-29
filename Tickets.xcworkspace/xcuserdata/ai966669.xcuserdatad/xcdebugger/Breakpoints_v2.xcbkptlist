@@ -57,44 +57,76 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tickets/CommandMethod/TopModel.swift"
-            timestampString = "484717249.143433"
+            filePath = "Tickets/CommandMethod/MCommandRequest.swift"
+            timestampString = "485022389.243971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
-            landmarkName = "universalRequest(requestMethod:dic:urlMethod:success:failure:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "applicationStart(_:failure:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tickets/MainTabbar/Mine/View/AvatarTableViewCell.swift"
+            timestampString = "486225524.932299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "layoutSubviews()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tickets/MainTabbar/Mine/Model/UserModel.swift"
+            timestampString = "486225587.080068"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "loginSuccess(_:)"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[6] = Value Promoted from Box&gt; of static Tickets.TopModel.(universalRequest (requestMethod : Tickets.Method, dic : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, urlMethod : Swift.String, success : (model : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure : (code : Swift.Int) -&gt; ()) -&gt; Tickets.Request).(closure #2)"
+                  symbolName = "Tickets.UserModel.loginSuccess (Swift.AnyObject) -&gt; ()"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/CommandMethod/TopModel.swift"
-                  timestampString = "485024702.068003"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/MainTabbar/Mine/Model/UserModel.swift"
+                  timestampString = "486227796.769346"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "247"
-                  endingLineNumber = "247"
-                  offsetFromSymbolStart = "2736">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "205">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "function signature specialization &lt;Arg[6] = Value Promoted from Box&gt; of static Tickets.TopModel.(universalRequest (requestMethod : Tickets.Method, dic : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, urlMethod : Swift.String, success : (model : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; (), failure : (code : Swift.Int) -&gt; ()) -&gt; Tickets.Request).(closure #2)"
+                  symbolName = "Tickets.UserModel.loginSuccess (Swift.AnyObject) -&gt; ()"
                   moduleName = "Tickets"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/CommandMethod/TopModel.swift"
-                  timestampString = "485024702.068159"
+                  urlString = "file:///Users/ai966669/Desktop/dream/%E7%90%86%E8%B4%A2/ticket/Tickets/MainTabbar/Mine/Model/UserModel.swift"
+                  timestampString = "486227796.769516"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "247"
-                  endingLineNumber = "247"
-                  offsetFromSymbolStart = "3040">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "520">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -105,13 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tickets/CommandMethod/MCommandRequest.swift"
-            timestampString = "485022389.243971"
+            filePath = "Tickets/MainTabbar/Mine/Model/UserModel.swift"
+            timestampString = "486225638.690281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "applicationStart(_:failure:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loginSuccess(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

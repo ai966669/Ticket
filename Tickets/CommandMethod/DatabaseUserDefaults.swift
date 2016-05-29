@@ -10,7 +10,7 @@ import UIKit
 
 class DatabaseUserDefaults: NSObject {
     static let shareManager = DatabaseUserDefaults()
-    func setSession_id(session_id:String){
+    func setSessionId(session_id:String){
         NSUserDefaults.standardUserDefaults().setValue(session_id, forKey: TKConfig.UD_LastTimeSignSession_id)
     }
     func isHaveSession_id() -> (String,Bool){

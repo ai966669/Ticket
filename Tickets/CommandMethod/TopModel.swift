@@ -134,8 +134,8 @@ class TopModel: NSObject {
     }
     private class func addNeccessayParamUniversal(var params:Dictionary<String, String>)->Dictionary<String, String>{
         // 必要字段   session_id，nonc
-        if UserModel.shareManager.session_id != ""{
-            params["session_id"] = UserModel.shareManager.session_id
+        if UserModel.shareManager.sessionId != ""{
+            params["session_id"] = UserModel.shareManager.sessionId
         }else{
             let token : (session_id:String,isHaveToken:Bool) = DatabaseUserDefaults.shareManager.isHaveSession_id()
             if  token.isHaveToken{

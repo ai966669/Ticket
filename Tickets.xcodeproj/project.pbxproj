@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		450EBC451CD8E86D004ADD37 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450EBC441CD8E86D004ADD37 /* FirstPageViewController.swift */; };
+		451C78421CF751F2000F9B64 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C78411CF751F2000F9B64 /* ColorExtension.swift */; };
 		4525BE021CDB95F50065E6AE /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE011CDB95F50065E6AE /* DiscoveryViewController.swift */; };
 		4525BE041CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE031CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift */; };
 		4525BE061CDB96870065E6AE /* MDiscoveryUniversay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE051CDB96870065E6AE /* MDiscoveryUniversay.swift */; };
@@ -20,10 +21,18 @@
 		45364BE11CE8BAF60033B7D0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BE01CE8BAF60033B7D0 /* MineViewController.swift */; };
 		45364BE61CE8C4A30033B7D0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BE41CE8C4A30033B7D0 /* AvatarTableViewCell.swift */; };
 		45565D5E1CDFA6D70052A75C /* HelpFromOc.m in Sources */ = {isa = PBXBuildFile; fileRef = 45565D5D1CDFA6D70052A75C /* HelpFromOc.m */; };
+		45662C711CF4B399005E0807 /* IMG_7064.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 45662C701CF4B399005E0807 /* IMG_7064.PNG */; };
+		45662C731CF4B6BB005E0807 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45662C721CF4B6BB005E0807 /* test.jpg */; };
 		4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */; };
 		4569F0471CDA4ACC009CA42F /* FirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */; };
 		4569F04B1CDA4B92009CA42F /* FirstPageTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04A1CDA4B92009CA42F /* FirstPageTableDataSource.swift */; };
 		4569F04D1CDA4FBE009CA42F /* MFirstPageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04C1CDA4FBE009CA42F /* MFirstPageTableView.swift */; };
+		456AD7D91CF5D3C6003E3563 /* LoginNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7D81CF5D3C6003E3563 /* LoginNeedViewController.swift */; };
+		456AD7DB1CF5D6D0003E3563 /* HWJNavControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */; };
+		456AD7DE1CF5D8C9003E3563 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */; };
+		456AD7DF1CF5D8C9003E3563 /* CouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456AD7DD1CF5D8C9003E3563 /* CouponViewController.xib */; };
+		456AD7E21CF5E4A3003E3563 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456AD7E11CF5E4A3003E3563 /* Images.xcassets */; };
+		456AD7E41CF5FC6F003E3563 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7E31CF5FC6F003E3563 /* BtnExtension.swift */; };
 		456D146F1CD3A12E005EE9E0 /* NZZCheckingOfInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 456D146E1CD3A12E005EE9E0 /* NZZCheckingOfInput.m */; };
 		4573A3AD1CDF9335008A2C00 /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573A3AC1CDF9335008A2C00 /* TopModel.swift */; };
 		4573A3AF1CDF99F2008A2C00 /* RegstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573A3AE1CDF99F2008A2C00 /* RegstViewController.swift */; };
@@ -51,7 +60,6 @@
 		45BB51721CE3575900DD35DA /* D3Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB51711CE3575900DD35DA /* D3Json.swift */; };
 		45DFF1381CD338A2002C0814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DFF1371CD338A2002C0814 /* AppDelegate.swift */; };
 		45DFF13F1CD338A2002C0814 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DFF13D1CD338A2002C0814 /* MainTabBar.storyboard */; };
-		45DFF1411CD338A2002C0814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DFF1401CD338A2002C0814 /* Assets.xcassets */; };
 		45DFF1441CD338A2002C0814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DFF1421CD338A2002C0814 /* LaunchScreen.storyboard */; };
 		45DFF14F1CD338A2002C0814 /* TicketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DFF14E1CD338A2002C0814 /* TicketsTests.swift */; };
 		45DFF15A1CD338A2002C0814 /* TicketsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DFF1591CD338A2002C0814 /* TicketsUITests.swift */; };
@@ -81,6 +89,7 @@
 /* Begin PBXFileReference section */
 		44B131C8E12455811CE60CBA /* libPods-Tickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450EBC441CD8E86D004ADD37 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		451C78411CF751F2000F9B64 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		4525BE011CDB95F50065E6AE /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		4525BE031CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryUniversalTableViewDataSource.swift; sourceTree = "<group>"; };
 		4525BE051CDB96870065E6AE /* MDiscoveryUniversay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDiscoveryUniversay.swift; sourceTree = "<group>"; };
@@ -94,10 +103,18 @@
 		45364BE41CE8C4A30033B7D0 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
 		45565D5C1CDFA6D70052A75C /* HelpFromOc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpFromOc.h; sourceTree = "<group>"; };
 		45565D5D1CDFA6D70052A75C /* HelpFromOc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpFromOc.m; sourceTree = "<group>"; };
+		45662C701CF4B399005E0807 /* IMG_7064.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_7064.PNG; sourceTree = "<group>"; };
+		45662C721CF4B6BB005E0807 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewCell.swift; sourceTree = "<group>"; };
 		4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageTableViewCell.xib; sourceTree = "<group>"; };
 		4569F04A1CDA4B92009CA42F /* FirstPageTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableDataSource.swift; sourceTree = "<group>"; };
 		4569F04C1CDA4FBE009CA42F /* MFirstPageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFirstPageTableView.swift; sourceTree = "<group>"; };
+		456AD7D81CF5D3C6003E3563 /* LoginNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNeedViewController.swift; sourceTree = "<group>"; };
+		456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWJNavControllerViewController.swift; sourceTree = "<group>"; };
+		456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		456AD7DD1CF5D8C9003E3563 /* CouponViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CouponViewController.xib; path = Tickets/MainTabbar/FirstPage/ViewController/CouponViewController.xib; sourceTree = SOURCE_ROOT; };
+		456AD7E11CF5E4A3003E3563 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		456AD7E31CF5FC6F003E3563 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
 		456D146C1CD3A12D005EE9E0 /* Tickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tickets-Bridging-Header.h"; path = "CommandMethod/Tickets-Bridging-Header.h"; sourceTree = "<group>"; };
 		456D146D1CD3A12E005EE9E0 /* NZZCheckingOfInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZZCheckingOfInput.h; sourceTree = "<group>"; };
 		456D146E1CD3A12E005EE9E0 /* NZZCheckingOfInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZZCheckingOfInput.m; sourceTree = "<group>"; };
@@ -129,7 +146,6 @@
 		45DFF1341CD338A2002C0814 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DFF1371CD338A2002C0814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DFF13E1CD338A2002C0814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabBar.storyboard; sourceTree = "<group>"; };
-		45DFF1401CD338A2002C0814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45DFF1431CD338A2002C0814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45DFF1451CD338A2002C0814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DFF14A1CD338A2002C0814 /* TicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +202,7 @@
 				45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */,
 				4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */,
 				4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */,
+				456AD7DD1CF5D8C9003E3563 /* CouponViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				450EBC441CD8E86D004ADD37 /* FirstPageViewController.swift */,
+				456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -243,10 +261,20 @@
 		45364BDC1CE8BA850033B7D0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				45662C721CF4B6BB005E0807 /* test.jpg */,
+				45662C701CF4B399005E0807 /* IMG_7064.PNG */,
 				45364BE01CE8BAF60033B7D0 /* MineViewController.swift */,
 				45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		456AD7E01CF5E47D003E3563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				456AD7E11CF5E4A3003E3563 /* Images.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		456D14641CD39852005EE9E0 /* Discover */ = {
@@ -310,6 +338,7 @@
 		45DFF12B1CD338A2002C0814 = {
 			isa = PBXGroup;
 			children = (
+				456AD7E01CF5E47D003E3563 /* Supporting Files */,
 				45DFF1361CD338A2002C0814 /* Tickets */,
 				45DFF14D1CD338A2002C0814 /* TicketsTests */,
 				45DFF1581CD338A2002C0814 /* TicketsUITests */,
@@ -332,6 +361,7 @@
 		45DFF1361CD338A2002C0814 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */,
 				458DBC431CD5A197001F45B0 /* ThirdPartySDK */,
 				45DFF16B1CD33BDC002C0814 /* CommandMethod */,
 				458A709C1CE21AAC00B76DA1 /* CommandRequest */,
@@ -340,10 +370,10 @@
 				45DFF1371CD338A2002C0814 /* AppDelegate.swift */,
 				456D146C1CD3A12D005EE9E0 /* Tickets-Bridging-Header.h */,
 				45DFF13D1CD338A2002C0814 /* MainTabBar.storyboard */,
-				45DFF1401CD338A2002C0814 /* Assets.xcassets */,
 				45DFF1421CD338A2002C0814 /* LaunchScreen.storyboard */,
 				45DFF1451CD338A2002C0814 /* Info.plist */,
 				45DFF16E1CD33CDA002C0814 /* TKConfig.swift */,
+				451C78411CF751F2000F9B64 /* ColorExtension.swift */,
 			);
 			path = Tickets;
 			sourceTree = "<group>";
@@ -371,6 +401,7 @@
 			children = (
 				457CE56D1CD3957700D3BA05 /* LoginViewController.swift */,
 				4573A3AE1CDF99F2008A2C00 /* RegstViewController.swift */,
+				456AD7D81CF5D3C6003E3563 /* LoginNeedViewController.swift */,
 				457CE56F1CD3959000D3BA05 /* LoginAndRegist.storyboard */,
 			);
 			path = LoginAndRegist;
@@ -402,6 +433,7 @@
 				45DFF16C1CD33C3C002C0814 /* DatabaseUserDefaults.swift */,
 				45B83D3F1CD8EB6300F23E4F /* candel.jpg */,
 				45B83D3D1CD8EAE200F23E4F /* DefineSwift.swift */,
+				456AD7E31CF5FC6F003E3563 /* BtnExtension.swift */,
 			);
 			path = CommandMethod;
 			sourceTree = "<group>";
@@ -541,14 +573,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45662C731CF4B6BB005E0807 /* test.jpg in Resources */,
 				45DFF1441CD338A2002C0814 /* LaunchScreen.storyboard in Resources */,
 				457CE5701CD3959000D3BA05 /* LoginAndRegist.storyboard in Resources */,
-				45DFF1411CD338A2002C0814 /* Assets.xcassets in Resources */,
 				4569F0471CDA4ACC009CA42F /* FirstPageTableViewCell.xib in Resources */,
+				456AD7E21CF5E4A3003E3563 /* Images.xcassets in Resources */,
 				458DBC571CD5A197001F45B0 /* Info.plist in Resources */,
+				45662C711CF4B399005E0807 /* IMG_7064.PNG in Resources */,
 				4525BE0A1CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.xib in Resources */,
 				45B83D401CD8EB6300F23E4F /* candel.jpg in Resources */,
 				45DFF13F1CD338A2002C0814 /* MainTabBar.storyboard in Resources */,
+				456AD7DF1CF5D8C9003E3563 /* CouponViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +667,7 @@
 				45B83D3E1CD8EAE200F23E4F /* DefineSwift.swift in Sources */,
 				45B83D441CD8EFF500F23E4F /* ImgDownloadQueen.swift in Sources */,
 				458DBC561CD5A197001F45B0 /* Error.swift in Sources */,
+				456AD7DB1CF5D6D0003E3563 /* HWJNavControllerViewController.swift in Sources */,
 				45364BDF1CE8BADF0033B7D0 /* UserInforViewController.swift in Sources */,
 				45DFF16F1CD33CDA002C0814 /* TKConfig.swift in Sources */,
 				4525BE061CDB96870065E6AE /* MDiscoveryUniversay.swift in Sources */,
@@ -645,8 +681,11 @@
 				4573A3AF1CDF99F2008A2C00 /* RegstViewController.swift in Sources */,
 				458DBC5B1CD5A197001F45B0 /* Request.swift in Sources */,
 				45364BD81CE8A99D0033B7D0 /* MCommandRequest.swift in Sources */,
+				451C78421CF751F2000F9B64 /* ColorExtension.swift in Sources */,
 				4525BE041CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift in Sources */,
 				457CE56E1CD3957700D3BA05 /* LoginViewController.swift in Sources */,
+				456AD7D91CF5D3C6003E3563 /* LoginNeedViewController.swift in Sources */,
+				456AD7DE1CF5D8C9003E3563 /* CouponViewController.swift in Sources */,
 				450EBC451CD8E86D004ADD37 /* FirstPageViewController.swift in Sources */,
 				458DBC611CD5A197001F45B0 /* Validation.swift in Sources */,
 				458DBC591CD5A197001F45B0 /* MultipartFormData.swift in Sources */,
@@ -659,6 +698,7 @@
 				458DBC601CD5A197001F45B0 /* Upload.swift in Sources */,
 				45364BE61CE8C4A30033B7D0 /* AvatarTableViewCell.swift in Sources */,
 				458DBC5C1CD5A197001F45B0 /* ResponseSerialization.swift in Sources */,
+				456AD7E41CF5FC6F003E3563 /* BtnExtension.swift in Sources */,
 				458DBC551CD5A197001F45B0 /* Download.swift in Sources */,
 				458DBC581CD5A197001F45B0 /* Manager.swift in Sources */,
 				45DFF16D1CD33C3C002C0814 /* DatabaseUserDefaults.swift in Sources */,

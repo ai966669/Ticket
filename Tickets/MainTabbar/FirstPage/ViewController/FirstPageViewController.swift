@@ -86,6 +86,8 @@ extension FirstPageViewController:UITableViewDelegate{
         return 100;
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var aCouponViewController = CouponViewController()
+        navigationController?.pushViewController(aCouponViewController, animated: true)
         print("点击\(indexPath.row)");
     }
 }

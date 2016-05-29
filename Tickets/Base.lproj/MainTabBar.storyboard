@@ -114,6 +114,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imgViewUserImg" destination="rmJ-Zy-9Tr" id="X3A-mj-VP1"/>
+                        <outlet property="viewHalfBackgroundBefore" destination="b8z-7V-h0H" id="YDR-Yk-5na"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEE-Hu-aLY" sceneMemberID="firstResponder"/>

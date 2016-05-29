@@ -33,11 +33,11 @@ class MFirstPageTableView: TopModel {
     var banners:[Banner]!
     var tickets:[Ticket]!
     func getDataForTicketsList(doLater:()->Void){
-        let param = TopModel.specialProcess(["page":1,"pagesize":10]);
+        let param = TopModel.specialProcess(["page":1,"pageSize":10]);
         TopModel.universalRequest(requestMethod: Method.GET, dic: param, urlMethod: TKConfig.URLCouponCouponList, success: { (model) in
             
             if let rInDic = model!["result"]   as? Dictionary<String,AnyObject>{
-                if let dataArr = rInDic["coupon_list"] as? NSArray {
+                if let dataArr = rInDic["couponList"] as? NSArray {
                         if let ticketArr:[Ticket] = D3Json.jsonToModelList(dataArr, clazz: Ticket.self){
                             self.tickets = ticketArr
                         }
@@ -59,7 +59,7 @@ class MFirstPageTableView: TopModel {
             
             
             if let rInDic = model!["result"]  as? Dictionary<String,AnyObject>{
-                if let dataArr = rInDic["banner_list"] as? NSArray {
+                if let dataArr = rInDic["bannerList"] as? NSArray {
                     if let bannerArr:[Banner] = D3Json.jsonToModelList(dataArr, clazz: Banner.self){
                             self.banners = bannerArr
                     }

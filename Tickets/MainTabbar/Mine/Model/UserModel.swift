@@ -9,7 +9,7 @@
 import UIKit
 class UserModel: TopModel {
     var id = 0
-    var session_id = ""
+    var sessionId = ""
     var phone = ""
     var username = ""
     var job=""
@@ -69,7 +69,7 @@ class UserModel: TopModel {
             
             if let modelDic = myDic["result"] as? Dictionary<String,AnyObject> {
                 UserModel.shareManager.setValuesForKeysWithDictionary(modelDic)
-                DatabaseUserDefaults.shareManager.setSession_id(UserModel.shareManager.session_id)
+                DatabaseUserDefaults.shareManager.setSessionId(UserModel.shareManager.sessionId)
             }
         }
     }
@@ -86,7 +86,7 @@ class UserModel: TopModel {
     }
     
     func signUp() {
-        let param =  TopModel.specialProcess(["session_id":UserModel.shareManager.session_id]);
+        let param =  TopModel.specialProcess(["session_id":UserModel.shareManager.sessionId]);
         TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLTaskMarkMark, success: { (model) in
             SVProgressHUD.showErrorWithStatus("签到成功")
         }) { (code) in
