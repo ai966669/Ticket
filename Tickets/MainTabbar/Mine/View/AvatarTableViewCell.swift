@@ -9,7 +9,7 @@
 import UIKit
 
 class AvatarTableViewCell: UITableViewCell {
-
+    var imgAvator=UIImageView()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,10 +23,12 @@ class AvatarTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        imageView?.frame=CGRectMake(10, 10, frame.height-20, frame.height-20)
-        imageView!.userInteractionEnabled=true
-        imageView?.image =  UIImage.init(named: "candel.jpg")
-        textLabel?.text=UserModel.shareManager.username
-        detailTextLabel?.text="用户id:\(UserModel.shareManager.id)"
+        imgAvator.frame=CGRectMake(frame.width-(frame.height-20)-20, 10, frame.height-20, frame.height-20)
+        imgAvator.userInteractionEnabled=true
+        imgAvator.image =  UIImage.init(named: "test.jpg")
+        addSubview(imgAvator)
+        imgAvator.layer.cornerRadius=5
+        imgAvator.layer.masksToBounds=true
     }
+    
 }

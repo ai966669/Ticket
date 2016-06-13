@@ -112,7 +112,7 @@ public class D3Json{
         
         var objs:Array<T> = []
         if let dics = data as? NSArray{
-            for(var i = 0 ;i < dics.count;i++){
+            for i in 0 ... dics.count-1 {
                 let dic:AnyObject = dics[i]
                 
                 objs.append(jsonToModel(dic,clazz: clazz))

@@ -33,7 +33,7 @@ class MCommandRequest: TopModel {
         
         let aUIDevice=UIDevice.currentDevice()
         
-        var net=""
+        let net=""
 //        let netInt=AFNetworkReachabilityManager.sharedManager().networkReachabilityStatus
         
 //        switch (netInt) {
@@ -56,7 +56,7 @@ class MCommandRequest: TopModel {
         
         let request = TopModel.universalRequest(requestMethod: Method.POST,dic: params, urlMethod: TKConfig.URLIndexIndexConfig, success: { (model) -> Void in
             if let modelInDic = model as? Dictionary<String,AnyObject>{
-                if let dataInDic = modelInDic["result"] as? Dictionary<String,AnyObject>{
+                if (modelInDic["result"] as? Dictionary<String,AnyObject>) != nil{
 //                    MUpToFile()
 //                    let aMMenus:MUi = D3Json.jsonToModel(dataInDic, clazz: MUi.self)
 //                    MUi.resetShareMMenus(aMMenus)

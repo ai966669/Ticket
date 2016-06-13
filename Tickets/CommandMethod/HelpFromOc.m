@@ -31,48 +31,46 @@ static NSString *pathOfDoc;
 }
 +(BOOL)isCameraAvalible{
     //判断相机是否能够使用
-    
+    BOOL isAvailble = false;
     AVAuthorizationStatus status = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     if(status == AVAuthorizationStatusAuthorized) {
         // authorized
-        return true;
+        isAvailble = true;
     } else if(status == AVAuthorizationStatusDenied){
         // denied
-        return  false;
+        isAvailble =  false;
     } else if(status == AVAuthorizationStatusRestricted){
         // restricted
-        return  false;
+        isAvailble =  false;
     } else if(status == AVAuthorizationStatusNotDetermined){
-        // not determined
-        //        [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-        //            if(granted){
-        //                [self presentViewController:self.imagePickerController animated:YES completion:nil];
-        //            } else {
-        //                return;
-        //            }
-        //        }];
-        return true;
-    }else{
-        return false;
+        isAvailble = true;
     }
+    if (!isAvailble){
+        UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"提醒" message:@"请在iPhone的“设置-券吧-相机”选项中，允许券吧访问您的手机相机" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:@"去设置",nil];
+        [alertView show];
+    }
+    return  isAvailble;
 }
 +(BOOL)isPhotoLibraryAvailble{
+    BOOL isAvailble = false;
     ALAuthorizationStatus status = [ALAssetsLibrary authorizationStatus];
     if(status == AVAuthorizationStatusAuthorized) {
         // authorized
-        return true;
+        isAvailble = true;
     } else if(status == AVAuthorizationStatusDenied){
         // denied
-        return  false;
+        isAvailble =  false;
     } else if(status == AVAuthorizationStatusRestricted){
         // restricted
-        return  false;
+        isAvailble =  false;
     } else if(status == AVAuthorizationStatusNotDetermined){
-        
-        return true;
-    }else{
-        return false;
+        isAvailble = true;
     }
+    if (!isAvailble){
+        UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"提醒" message:@"请在iPhone的“设置-券吧-相册”选项中，允许券吧访问您的手机相机" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:@"去设置",nil];
+        [alertView show];
+    }
+    return  isAvailble;
 }
 
 + (UIViewController *)getPresentedViewController
@@ -201,17 +199,17 @@ static NSString *pathOfDoc;
     return dic;
 }
 
-+ (NSString*)dictionaryToJson:(NSDictionary *)dic
-
-{
-    
-    NSError *parseError = nil;
-    
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:nil error:&parseError];
-    
-    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    
-}
+//+ (NSString*)dictionaryToJson:(NSDictionary *)dic
+//
+//{
+//    
+//    NSError *parseError = nil;
+//    
+//    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:nil error:&parseError];
+//    
+//    return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//    
+//}
 
 
 + (NSString *)objectToJsonString:(NSDictionary *)dictionary
@@ -463,10 +461,14 @@ static NSString *pathOfDoc;
         return  nil;
     }
 }
-//+(void)initCassyler{
-//#if TARGET_IPHONE_SIMULATOR
-//    NSString* absoluteFilePath = CASAbsoluteFilePath(@"stylesheet.cas");
-//    [CASStyler defaultStyler].watchFilePath = absoluteFilePath;
-//#endif
-//}
+
+#pragma UIAlertViewDelegate
+
++ (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex==1) {
+        NSString *app_id = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"CFBundleIdentifier"];
+        NSURL *setUrl = [NSURL URLWithString:[NSString stringWithFormat: @"prefs:root=%@", app_id ]];
+        [[UIApplication sharedApplication] openURL:setUrl];
+    }
+}
 @end

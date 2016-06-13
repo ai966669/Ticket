@@ -21,7 +21,8 @@ class TKConfig: NSObject {
     static let UD_LastTimeUserId = "UD_LastTimeUserId"
     static var BaseURL:String {
         get{
-            var value="http://121.43.63.65/" //192.168.1.101:8080  http://121.43.63.65:8888
+//            var value="http://192.168.1.101:8080/" //192.168.1.101:8080  http://121.43.63.65/
+            var value="http://121.43.63.65/"
             if !environmentIsTest{
                 value = "https://app.ultimavip.cn"
             }
@@ -37,6 +38,8 @@ class TKConfig: NSObject {
     static let URLUserUserLogin="/user/user/login"
      /// token登陆 ，获取个人信息
     static let URLUserUserInfo="/user/user/info"
+    //更新
+    static let URLUserUserUpdate="/user/user/update"
      /// 密码重置
     static let URLUserValidateReset="/user/validate/reset"
      /// 发送注册验证码
@@ -46,7 +49,7 @@ class TKConfig: NSObject {
     /// 卡券列表
     static let URLCouponCouponList="/coupon/coupon/list"
     static let URLTaskMarkMark="/task/mark/mark"
+    //七牛token
     static let URLIndexIndexConfig="/index/index/config"
-    
     
 }

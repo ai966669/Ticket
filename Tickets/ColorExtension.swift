@@ -11,4 +11,7 @@ extension UIColor{
     class func ColorByRGB(R:CGFloat,G:CGFloat,B:CGFloat,A:CGFloat)->UIColor{
         return UIColor.init(red: R/255.0, green: G/255.0, blue: B/255.0, alpha: A)
     }
+    class func DefaultBackgroundColor()->UIColor{
+        return ColorByRGB(241, G: 241, B: 241, A: 1)
+    }
 }

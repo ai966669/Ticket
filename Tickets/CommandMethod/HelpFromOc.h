@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 //#import <AFNetworking/AFNetworking.h>
-@interface HelpFromOc : NSObject
+@interface HelpFromOc : NSObject <UIAlertViewDelegate>
 +(NSString*)stringFromData:(NSData *)deviceToken;
 +(BOOL)isPhotoLibraryAvailble;
 +(BOOL)isCameraAvalible;
@@ -17,7 +17,6 @@
 + (NSString *)objectToJsonString:(NSDictionary *)dictionary;
 + (NSString *)getMsgPath:(NSString *)nameOfFile :(BOOL)isVoice;
 + (double)intervalFromLastDate: (NSString *) dateString1  toTheDate:(NSString *) dateString2;
-+ (NSDictionary*)analysisNotificationInGetui:(NSString*)payloadId;
 + (void)redirectNSlogToDocumentFolder;
 + (UIViewController *)getCurrentVC;
 + (UIViewController *)getPresentedViewController;
@@ -37,13 +36,6 @@
 +(NSString*)getDeveicePlatform;
 
 
-+ (NSString*)dictionaryToJson:(NSDictionary *)dic;
-//+ (void)downloadFileWithRequestURL:(NSString*)requestURL
-//                        savedPath:(NSString*)savedPath
-//                  downloadSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                  downloadFailure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
-+ (void)downloadFileWithInferface:(NSString*)requestURL
-                        savedPath:(NSString*)savedPath;
+//+ (NSString*)dictionaryToJson:(NSDictionary *)dic;
 +(NSObject*)getValueFromObject:(NSObject *)obj :(NSString*)key;
-+(void)initCassyler;
 @end

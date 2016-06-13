@@ -13,7 +13,10 @@ class Banner:NSObject {
     var status = 1
     var url = ""
 }
-
+class TicketDescription{
+    var title=""
+    var content=""
+}
 class Ticket:NSObject {
     var bussiness = "";
     var end_time = "";
@@ -25,6 +28,11 @@ class Ticket:NSObject {
     var status = 1;
     var storage = -1
     var title = ""
+    
+    var coverImg=""
+    var score = 100
+    var rules="" //兑换条件
+    var descriptions:[TicketDescription]=[]
 }
 class MFirstPageTableView: TopModel {
 //    var ticketsTitle:[String] = []

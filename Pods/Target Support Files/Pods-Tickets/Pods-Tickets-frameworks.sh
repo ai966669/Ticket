@@ -82,3 +82,22 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Tickets/AFNetworking.framework"
+  install_framework "Pods-Tickets/CocoaSecurity.framework"
+  install_framework "Pods-Tickets/HappyDNS.framework"
+  install_framework "Pods-Tickets/Qiniu.framework"
+  install_framework "Pods-Tickets/SDWebImage.framework"
+  install_framework "Pods-Tickets/SVProgressHUD.framework"
+  install_framework "Pods-Tickets/SnapKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Tickets/AFNetworking.framework"
+  install_framework "Pods-Tickets/CocoaSecurity.framework"
+  install_framework "Pods-Tickets/HappyDNS.framework"
+  install_framework "Pods-Tickets/Qiniu.framework"
+  install_framework "Pods-Tickets/SDWebImage.framework"
+  install_framework "Pods-Tickets/SVProgressHUD.framework"
+  install_framework "Pods-Tickets/SnapKit.framework"
+fi

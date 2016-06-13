@@ -144,17 +144,17 @@ class TopModel: NSObject {
                 params["session_id"] = "default"
             }
         }
-        if UserModel.shareManager.id != 0{
-            params["userId"] = "\(UserModel.shareManager.id)"
-        }else {
-            let  lastUserId = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeUserId) as? String
-            if (lastUserId != "") && (lastUserId != nil) {
-                params["userId"] = "\(lastUserId!)"
-            }else{
-                params["userId"] = "default"
-                //params["userId"] = "联系壮壮，参数错了"
-            }
-        }
+//        if UserModel.shareManager.id != 0{
+//            params["userId"] = ""
+//        }else {
+//            let  lastUserId = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeUserId) as? String
+//            if (lastUserId != "") && (lastUserId != nil) {
+//                params["userId"] = "\(lastUserId!)"
+//            }else{
+//                params["userId"] = "default"
+//                //params["userId"] = "联系壮壮，参数错了"
+//            }
+//        }
         params["nonce"] = "\(arc4random()%1000000)"
         return params
     }
@@ -206,7 +206,7 @@ class TopModel: NSObject {
             aUIViewController.view.addSubview(activityIndicator!)
             activityIndicator?.startAnimating()
         }
-        var url="\(TKConfig.BaseURL)\(urlMethod)"
+        let url="\(TKConfig.BaseURL)\(urlMethod)"
         return request(requestMethod, url, parameters: dic, encoding:ParameterEncoding.URL).response { (request, response, data, error) -> Void in
             if (activityIndicator != nil){
                 dispatch_async(dispatch_get_main_queue()) { () -> Void in

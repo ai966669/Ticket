@@ -29,7 +29,6 @@ class FirstPageViewController: UIViewController {
         view.addSubview(pageControl)
     }
     func  initBanner(){
-        
         aMFirstPageTableView.getDataForBanner { [weak self]  () in
             var imgUrls : [NSURL] = []
             if (self != nil && self!.aMFirstPageTableView.banners != nil){
@@ -46,6 +45,7 @@ class FirstPageViewController: UIViewController {
  
     }
     func initTableviewTicketFisrtPage(){
+//       var a = UIViewController.init()
         tableviewTicketFisrtPage=UITableView.init(frame: CGRectMake(0, banner.frame.height+banner.frame.origin.y, ScreenW, ScreenH-ScreenH*0.3-(self.navigationController?.navigationBar.frame.height)!-HeightTabbar))
         //dohere 如何更好地分层
         aMFirstPageTableView.getDataForTicketsList { () in
@@ -86,7 +86,7 @@ extension FirstPageViewController:UITableViewDelegate{
         return 100;
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var aCouponViewController = CouponViewController()
+        let aCouponViewController = CouponViewController.init(aTicket:self.aFirstPageTableDataSource.dataSource.tickets[indexPath.row])
         navigationController?.pushViewController(aCouponViewController, animated: true)
         print("点击\(indexPath.row)");
     }

@@ -26,13 +26,12 @@ extension MainTabbar{
         switch item.tag {
         case 1:
             title="首页"
-//            createTitleView("首页")
             navigationController?.setNavigationBarHidden(false, animated: false)
         case 2:
             navigationController?.setNavigationBarHidden(true, animated: false)
         case 3:
-//            createTitleView("我的")
             title="我的"
+             navigationController?.setNavigationBarHidden(false, animated: false)
         default:
             navigationController?.setNavigationBarHidden(false, animated: false)
         }

@@ -13,9 +13,9 @@ class MUpToFile: TopModel {
         
         var aQNUploadOption:QNUploadOption?
         aQNUploadOption=QNUploadOption(mime: nil, progressHandler: { (key, percent) -> Void in
-//            if aModelOfMsgCellImg.percent != Int(percent*100){
-//                aModelOfMsgCellImg.percent=Int(percent*100)
-//            }
+            //            if aModelOfMsgCellImg.percent != Int(percent*100){
+            //                aModelOfMsgCellImg.percent=Int(percent*100)
+            //            }
             print("上传进度\(Int(percent*100))")
             }, params: nil, checkCrc: false, cancellationSignal: { () -> Bool in
                 return false
@@ -24,7 +24,7 @@ class MUpToFile: TopModel {
         var strUptoken = isNeedRequestToGetUptoken()
         //        查看是否有有效的牵牛token,没有
         
-        strUptoken = "__vafSsRk-eaqDK1734Q1XxoRrcglFc2JOKGPlhD:9tqSO478ceE_s41Vlf3ET9r8Wok=:eyJzY29wZSI6Im1vcnRyZWQtZGV2IiwiZGVhZGxpbmUiOjE0NjMzNzEzODZ9"
+                strUptoken = "__vafSsRk-eaqDK1734Q1XxoRrcglFc2JOKGPlhD:DeIzQ2dCLn80hTG1i37eA15kJXU=:eyJzY29wZSI6Im1vcnRyZWQtZGV2IiwiZGVhZGxpbmUiOjE0NjQ3MTA2NDl9"
         if strUptoken == "" {
             getUptoken({ (upToken) -> Void in
                 let upManager = QNUploadManager()
@@ -98,16 +98,21 @@ class MUpToFile: TopModel {
     private class func getUptoken(doLaterSuccess:((upToken:String)->Void),doLaterFail:(()->Void)){
         MCommandRequest().getSystemUpToken({ (model) -> Void in
             if let rInDic = model as? Dictionary<String,AnyObject>{
-                if let upToken = rInDic["result"] as? String{
-                    NSUserDefaults.standardUserDefaults().setValue(upToken, forKey: TKConfig.QiniuUpToken)
-                    let date = NSDate(timeIntervalSinceNow: 24*60*60)
-                    let dateformatter = NSDateFormatter()
-                    dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
-                    let strDate = dateformatter.stringFromDate(date)
-                    Log("Date\(strDate)")
-                    NSUserDefaults.standardUserDefaults().setValue(strDate, forKey: TKConfig.QiniuUpTokenTime)
-                    
-                    doLaterSuccess(upToken: upToken)
+                //                var  a=rInDic["result"]
+                if let upTokenInDic = rInDic["result"] as? Dictionary<String,AnyObject>{
+                    if let upToken = upTokenInDic["cdnToken"] as? String{
+                        NSUserDefaults.standardUserDefaults().setValue(upTokenInDic, forKey: TKConfig.QiniuUpToken)
+                        let date = NSDate(timeIntervalSinceNow: 24*60*60)
+                        let dateformatter = NSDateFormatter()
+                        dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+                        let strDate = dateformatter.stringFromDate(date)
+                        Log("Date\(strDate)")
+                        NSUserDefaults.standardUserDefaults().setValue(strDate, forKey: TKConfig.QiniuUpTokenTime)
+                        
+                        doLaterSuccess(upToken: upToken)
+                    }else{
+                        SVProgressHUD.showErrorWithStatus(MsgShow.ErrAnalysisServerData2Dic)
+                    }
                 }else{
                     SVProgressHUD.showErrorWithStatus(MsgShow.ErrAnalysisServerData2Dic)
                 }

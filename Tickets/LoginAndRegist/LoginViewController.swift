@@ -14,7 +14,7 @@ protocol LoginViewControllerDelegate:NSObjectProtocol{
 class LoginViewController: UIViewController {
     @IBOutlet var txtFldPhone: UITextField!
     @IBOutlet var txtFldPsw: UITextField!
-    var delegate:LoginViewControllerDelegate!
+    var delegate:LoginViewControllerDelegate?
     var fromInside=false
     @IBAction func showRegist(sender: AnyObject) {
         let aStroyBoardSource = UIStoryboard(name: "LoginAndRegist", bundle: nil)
@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
             if  let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
                 if self.fromInside{
                     self.dismissViewControllerAnimated(true, completion: nil)
+                    if (self.delegate != nil){
+                        self.delegate!.loginSuccess()
+                    }
                 }else{
                     appDelegate.setRootViewControllerisTabbar()
                 }
@@ -42,6 +45,9 @@ class LoginViewController: UIViewController {
         view.backgroundColor=UIColor.yellowColor()
     }
     func loginCancel()  {
-        delegate.loginCancel()
+        if (delegate != nil){
+            delegate!.loginCancel()
+        }
+        
     }
 }

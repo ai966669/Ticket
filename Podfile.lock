@@ -21,27 +21,30 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - CocoaSecurity (1.2.4)
-  - HappyDNS (0.2.4)
-  - Qiniu (7.0.18):
+  - HappyDNS (0.3.5)
+  - Qiniu (7.0.20):
     - AFNetworking (~> 2.0)
-    - HappyDNS (~> 0.2)
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
+    - HappyDNS (~> 0.3)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SnapKit (0.15.0)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - CocoaSecurity
   - Qiniu (~> 7.0)
   - SDWebImage (~> 3.7)
+  - SnapKit (~> 0.15.0)
   - SVProgressHUD (~> 2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
-  HappyDNS: 86ab4be498cc5cc884002b248979cd130cfbe10e
-  Qiniu: 7a9c2a2bbdec02ae84b92051637e1e9ea3d182fb
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  HappyDNS: 6f8cf46fa7c0b98a6591fe8ecb2e08d9907a6e8b
+  Qiniu: 8958e70c02fb563c8c04d555bb5041441c5f4216
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
 COCOAPODS: 0.39.0

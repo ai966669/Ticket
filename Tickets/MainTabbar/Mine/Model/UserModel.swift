@@ -8,19 +8,32 @@
 
 import UIKit
 class UserModel: TopModel {
-    var id = 0
     var sessionId = ""
     var phone = ""
-    var username = ""
+    var userName = ""
     var job=""
-    var test = 1
     var email = ""
-    var avatar_url=""
-    var id_card_no=""
+    var avatarUrl=""
+    var idCardNo=""
     var password = ""
-    var sign = 0
+    var hasMarked = 0
+    var score = 0
     private override init() {
         
+    }
+    func toDic()->NSDictionary {
+        let modelInDic:NSMutableDictionary=NSMutableDictionary()
+        var outCount:UInt32=0
+        let  properties=class_copyPropertyList(UserModel.self, &outCount)
+        for k in 0...Int(outCount)-1{
+            let  property=properties[k]
+            let name =  String.fromCString(property_getName(property))
+            if let value = self.valueForKey(name!){
+                print("\(name!):\(value)")
+                modelInDic[name!]="\(value)"
+            }
+        }
+        return modelInDic
     }
     static let shareManager = UserModel()
     //dohere正在做登陆，考虑用宏定义来给UserModel做一个单例，
@@ -61,8 +74,26 @@ class UserModel: TopModel {
 //       DatabaseUserDefaults.shareManager.setSession_id("")
     }
     func loginOut(){
-        //let token : (str:String,isHaveToken:Bool) = DatabaseUserDefaults.isHaveToken()
-       
+        resetData()
+        if let appdelegate = UIApplication.sharedApplication().delegate as? AppDelegate{
+            appdelegate.setRootViewControllerIsLogin()
+        }
+    }
+    func resetData() {
+        DatabaseUserDefaults.shareManager.setSessionId("")
+        resetUserInfor()
+    }
+    func resetUserInfor(){
+        sessionId = ""
+         phone = ""
+        userName = ""
+        job=""
+         email = ""
+         avatarUrl=""
+         idCardNo=""
+         password = ""
+         hasMarked = 0
+         score = 0
     }
     func  loginSuccess(model:AnyObject) {
         if let myDic = model as? Dictionary<String,AnyObject> {
@@ -91,6 +122,15 @@ class UserModel: TopModel {
             SVProgressHUD.showErrorWithStatus("签到成功")
         }) { (code) in
 //            SVProgressHUD.showErrorWithStatus("签到失败")
+        }
+    }
+    
+    func update(){
+        let param =  TopModel.unverisalProcess(self.toDic() as! Dictionary<String, String>)
+        TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLUserUserUpdate, success: { (model) in
+            SVProgressHUD.showErrorWithStatus("签到成功")
+        }) { (code) in
+            SVProgressHUD.showErrorWithStatus("签到失败")
         }
     }
 }

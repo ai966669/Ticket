@@ -20,6 +20,19 @@ class LoginNeedViewController: UIViewController {
             navLoginViewController!.dismissViewControllerAnimated(true, completion: nil)
         }
     }
+    init() {
+        
+        super.init(nibName: nil, bundle: nil)
+//        super.init()
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func dissmissLoginVcCancel(){
         if (navLoginViewController != nil){
@@ -38,18 +51,20 @@ class LoginNeedViewController: UIViewController {
         return aLoginViewController!
     }
     func checkLogin(doAfterLogin:()->Void){
-        self.doAfterLogin=doAfterLogin;
-        navLoginViewController =  UINavigationController(rootViewController: createLoginViewControllerFromInside())
-        self.presentViewController(navLoginViewController!, animated: true, completion: nil)
-    }
-
-    override func viewDidLoad() {
-        checkLogin { 
-            super.viewDidLoad()
+        if UserModel.shareManager.phone == ""{
+            self.doAfterLogin=doAfterLogin;
+            navLoginViewController =  UINavigationController(rootViewController: createLoginViewControllerFromInside())
+            self.presentViewController(navLoginViewController!, animated: true, completion: nil)
+        }else{
+            doAfterLogin()
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,15 +72,15 @@ class LoginNeedViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 extension LoginNeedViewController:LoginViewControllerDelegate{
     func loginSuccess(){

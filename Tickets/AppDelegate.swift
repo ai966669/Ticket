@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         window?.makeKeyAndVisible()
@@ -48,17 +49,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setRootViewControllerIsLogin(){
         
         if (navLogin == nil){
+
+            let aLoginViewController:LoginViewController?=UIStoryboard(name: "LoginAndRegist", bundle: nil).instantiateViewControllerWithIdentifier("LoginViewController") as?  LoginViewController
             
-            let aStroyBoardSource = UIStoryboard(name: "LoginAndRegist", bundle: nil)
-            
-            navLogin = UINavigationController(rootViewController: aStroyBoardSource.instantiateInitialViewController()!)
+            navLogin = UINavigationController(rootViewController: aLoginViewController!)
             
             navMain?.navigationBar.tintColor=UIColor.whiteColor()
             
             navMain?.navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.whiteColor()]
             
         }
-        
+        if ((navMain) != nil){
+            if   let aMainTabbar = navMain?.viewControllers[0] as? MainTabbar{
+                aMainTabbar.navigationController?.popViewControllerAnimated(false)
+                    aMainTabbar.selectedIndex=0;
+            }
+        }
         self.window?.rootViewController=navLogin
     }
     func  setRootViewControllerisTabbar() {
@@ -72,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             navMain?.navigationBar.tintColor=UIColor.whiteColor()
             
             navMain?.navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.whiteColor()]
-            
+
         }
         
         self.window?.rootViewController=navMain

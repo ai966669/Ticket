@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4A803D55ABCB8560C3DF72DC'
+               BlueprintIdentifier = 'BAECFBF9DD2AD09BCB432262'
                BlueprintName = 'CocoaSecurity'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libCocoaSecurity.a'>
+               BuildableName = 'CocoaSecurity.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

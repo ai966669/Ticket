@@ -10,14 +10,16 @@ import UIKit
 
 class MineViewController: UIViewController  {
     
+    @IBOutlet var lblMoneySave: UILabel!
     @IBOutlet var imgViewUserImg: UIImageView!
     @IBOutlet var viewHalfBackgroundBefore: UIView!
     
     var tabelView:UITableView!
     var cellTitles=[["我的活动","我的券吧"],["关于我们"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor=UIColor.lightGrayColor()
+        view.backgroundColor=UIColor.DefaultBackgroundColor()
         initImgViewUserImg()
         initTableview()
         // Do any additional setup after loading the view.
@@ -64,14 +66,12 @@ class MineViewController: UIViewController  {
     @IBAction func signUp(sender: AnyObject) {
         
         
-        var data=UIImageJPEGRepresentation(UIImage.init(named: "candel.jpg")!, 1);
+        let data=UIImageJPEGRepresentation(UIImage.init(named: "candel.jpg")!, 1);
     MUpToFile.upToFile(data!, backInfo: { (_, _, _) in
         
         }) { 
             
         }
-        
-//        UserModel.shareManager.signUp()
     }
     
     /*
@@ -100,7 +100,7 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view=UIView.init(frame: CGRectMake(0, 0, 0,0))
-        view.backgroundColor=UIColor.lightGrayColor()
+        view.backgroundColor=UIColor.DefaultBackgroundColor()
         return view
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
