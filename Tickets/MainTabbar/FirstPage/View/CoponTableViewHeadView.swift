@@ -19,41 +19,76 @@ class CoponTableViewHeadView: UIView {
     }
     */
     var imgVCopon: UIImageView!
-    var lblRule: UILabel!
+    let spaceImgVCoponBot:CGFloat = 10
     var lblTitle:UILabel!
-    var lblSocre:UILabel!
+    let spaceLblTitleBot:CGFloat = 10
+    var imgVScore:UIImageView!
+    var lblScore:UILabel!
+    let spaceLblScoreBot:CGFloat = 10
+    var lblRuleTime: UILabel!
+    
     var heightAll:CGFloat!
+    init(){
+        super.init(frame: CGRectMake(0, 0, ScreenW, 0))
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
     func  setValue(aTicket:Ticket){
-        addImgVc()
+        addImgVc(aTicket.image)
         addLblTitle(aTicket.title)
+        addLblScore(aTicket.score)
     }
-    func addImgVc() {
+    func addImgVc(imgUrlStr:String) {
         imgVCopon = UIImageView()
         addSubview(imgVCopon)
         imgVCopon.snp_remakeConstraints { (make) -> Void in
             make.left.right.top.equalTo(self).inset(UIEdgeInsetsMake(0, 0, 0, 0))
-            make.height.equalTo(80)
+            make.height.equalTo(320)
         }
-        imgVCopon.image=UIImage.init(named: "candel.jpg")
+        imgVCopon.sd_setImageWithURL(NSURL.init(string: imgUrlStr))
     }
     
     func  addLblTitle(txt:String) {
-        let txt1 = "ASDFHASDFJLK阿斯兰的放假啦束带结发按数据库里打飞机卡死的积分"
         lblTitle = UILabel()
         lblTitle.font = UIFont.systemFontOfSize(16)
         addSubview(lblTitle)
-        let rect = (txt1 as NSString).boundingRectWithSize(CGSizeMake(ScreenW, 200), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:lblTitle.font], context: nil)
+        let rect = (txt as NSString).boundingRectWithSize(CGSizeMake(ScreenW, 200), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:lblTitle.font], context: nil)
         lblTitle.snp_makeConstraints { (make) in
             make.left.right.equalTo(self).inset(UIEdgeInsetsMake(0, 8, 0, 8))
             make.top.equalTo(imgVCopon.snp_bottom)
-            make.height.equalTo(0).offset(rect.size.height)
+//            make.height.equalTo(0).offset(rect.size.height)
         }
         lblTitle.text=txt
-        heightAll = rect.height + 80
+        heightAll = rect.height + 320
+        frame = CGRectMake(0, 0, ScreenW,heightAll)
+    }
+    
+    func addImgVScore() {
+        imgVScore = UIImageView()
+        imgVScore.backgroundColor = UIColor.blueColor()
+        addSubview(imgVScore)
+        imgVScore.snp_makeConstraints { (make) in
+            make.left.equalTo(self)
+            make.top.equalTo(lblTitle.snp_bottom).offset(10)
+            make.size.equalTo(CGSizeMake(30, 40))
+        }
+    }
+    func  addLblScore(score:Int) {
+        lblScore = UILabel()
+        lblScore.font = UIFont.systemFontOfSize(30)
+        lblScore.textColor = UIColor.redColor()
+        addSubview(lblScore)
+        lblScore.text = "\(score)"
+        lblScore.textColor = UIColor.redColor()
+        let rect = (lblScore.text == nil ) ? CGRectMake(0, 0, 0, 0) : (lblTitle.text! as NSString).boundingRectWithSize(CGSizeMake(ScreenW, 200), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: [NSFontAttributeName:lblScore.font], context: nil)
+        lblTitle.snp_makeConstraints { (make) in
+            make.left.equalTo(self)
+            make.top.equalTo(imgVCopon.snp_bottom).offset(5)
+        }
+        lblTitle.textAlignment = NSTextAlignment.Left
+        heightAll = heightAll + rect.height
         frame = CGRectMake(0, 0, ScreenW,heightAll)
     }
     

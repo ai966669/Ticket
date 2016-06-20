@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="首页" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="首页" image="first" selectedImage="homeS" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +131,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="homeS" width="28" height="28"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
