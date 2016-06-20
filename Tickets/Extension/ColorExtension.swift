@@ -14,4 +14,8 @@ extension UIColor{
     class func DefaultBackgroundColor()->UIColor{
         return ColorByRGB(241, G: 241, B: 241, A: 1)
     }
+    
+    class func TopicColor() -> UIColor{
+        return ColorByRGB(231, G: 11, B: 23, A: 1)
+    }
 }

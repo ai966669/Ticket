@@ -11,7 +11,6 @@
 		45118D221D0D876000B4E2E3 /* CouponTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45118D211D0D876000B4E2E3 /* CouponTableView.swift */; };
 		45118D241D0D89AD00B4E2E3 /* MCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45118D231D0D89AD00B4E2E3 /* MCouponViewController.swift */; };
 		45118D261D0D8BCB00B4E2E3 /* CoupnDescriptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45118D251D0D8BCB00B4E2E3 /* CoupnDescriptionsTableViewCell.swift */; };
-		451C78421CF751F2000F9B64 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C78411CF751F2000F9B64 /* ColorExtension.swift */; };
 		4525BE021CDB95F50065E6AE /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE011CDB95F50065E6AE /* DiscoveryViewController.swift */; };
 		4525BE041CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE031CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift */; };
 		4525BE061CDB96870065E6AE /* MDiscoveryUniversay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE051CDB96870065E6AE /* MDiscoveryUniversay.swift */; };
@@ -21,7 +20,8 @@
 		45364BDF1CE8BADF0033B7D0 /* UserInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */; };
 		45364BE11CE8BAF60033B7D0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BE01CE8BAF60033B7D0 /* MineViewController.swift */; };
 		45364BE61CE8C4A30033B7D0 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BE41CE8C4A30033B7D0 /* AvatarTableViewCell.swift */; };
-		4549AF861D1847E7008DD8C3 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF791D1847E7008DD8C3 /* BtnExtension.swift */; };
+		453976021D184E48003D6D20 /* BtnExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453976001D184E48003D6D20 /* BtnExtension.swift */; };
+		453976031D184E48003D6D20 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453976011D184E48003D6D20 /* ColorExtension.swift */; };
 		4549AF871D1847E7008DD8C3 /* CodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF7A1D1847E7008DD8C3 /* CodeRequest.swift */; };
 		4549AF881D1847E7008DD8C3 /* D3Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF7B1D1847E7008DD8C3 /* D3Json.swift */; };
 		4549AF891D1847E7008DD8C3 /* DatabaseUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF7C1D1847E7008DD8C3 /* DatabaseUserDefaults.swift */; };
@@ -103,7 +103,8 @@
 		45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInforViewController.swift; sourceTree = "<group>"; };
 		45364BE01CE8BAF60033B7D0 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		45364BE41CE8C4A30033B7D0 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
-		4549AF791D1847E7008DD8C3 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
+		453976001D184E48003D6D20 /* BtnExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtnExtension.swift; sourceTree = "<group>"; };
+		453976011D184E48003D6D20 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		4549AF7A1D1847E7008DD8C3 /* CodeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeRequest.swift; sourceTree = "<group>"; };
 		4549AF7B1D1847E7008DD8C3 /* D3Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D3Json.swift; sourceTree = "<group>"; };
 		4549AF7C1D1847E7008DD8C3 /* DatabaseUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseUserDefaults.swift; sourceTree = "<group>"; };
@@ -276,6 +277,15 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		453975FF1D184E01003D6D20 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				453976001D184E48003D6D20 /* BtnExtension.swift */,
+				453976011D184E48003D6D20 /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		456AD7E01CF5E47D003E3563 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +317,6 @@
 		458A709C1CE21AAC00B76DA1 /* CommandRequest */ = {
 			isa = PBXGroup;
 			children = (
-				4549AF791D1847E7008DD8C3 /* BtnExtension.swift */,
 				4549AF7A1D1847E7008DD8C3 /* CodeRequest.swift */,
 				4549AF7B1D1847E7008DD8C3 /* D3Json.swift */,
 				4549AF7C1D1847E7008DD8C3 /* DatabaseUserDefaults.swift */,
@@ -380,6 +389,7 @@
 		45DFF1361CD338A2002C0814 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				453975FF1D184E01003D6D20 /* Extension */,
 				456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */,
 				458DBC431CD5A197001F45B0 /* ThirdPartySDK */,
 				458A709C1CE21AAC00B76DA1 /* CommandRequest */,
@@ -658,7 +668,7 @@
 				45DFF1381CD338A2002C0814 /* AppDelegate.swift in Sources */,
 				458DBC5D1CD5A197001F45B0 /* Result.swift in Sources */,
 				4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */,
-				4549AF861D1847E7008DD8C3 /* BtnExtension.swift in Sources */,
+				453976031D184E48003D6D20 /* ColorExtension.swift in Sources */,
 				4569F04B1CDA4B92009CA42F /* FirstPageTableDataSource.swift in Sources */,
 				45B83D421CD8EB9400F23E4F /* BannerInFirstPage.swift in Sources */,
 				458DBC561CD5A197001F45B0 /* Error.swift in Sources */,
@@ -678,7 +688,7 @@
 				4549AF8C1D1847E7008DD8C3 /* ImgDownloadQueen.swift in Sources */,
 				4573A3AF1CDF99F2008A2C00 /* RegstViewController.swift in Sources */,
 				458DBC5B1CD5A197001F45B0 /* Request.swift in Sources */,
-				451C78421CF751F2000F9B64 /* ColorExtension.swift in Sources */,
+				453976021D184E48003D6D20 /* BtnExtension.swift in Sources */,
 				4525BE041CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift in Sources */,
 				457CE56E1CD3957700D3BA05 /* LoginViewController.swift in Sources */,
 				456AD7D91CF5D3C6003E3563 /* LoginNeedViewController.swift in Sources */,

@@ -11,6 +11,7 @@ import UIKit
 class MainTabbar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.tabBar.tintColor = UIColor.TopicColor()
 //        createTitleView("首页")
     }
 //    private  func createTitleView(titleStr:String){
