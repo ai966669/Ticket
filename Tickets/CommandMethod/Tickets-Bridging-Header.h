@@ -12,7 +12,7 @@
 #import "HelpFromOc.h"
 
 //	md5加密
-#import <CocoaSecurity.h>
+//#import <CocoaSecurity.h>
 
 //提示
 #import "SVProgressHUD.h"

@@ -16,6 +16,6 @@ extension UIColor{
     }
     
     class func TopicColor() -> UIColor{
-        return ColorByRGB(231, G: 11, B: 23, A: 1)
+        return ColorByRGB(234, G: 0, B: 0, A: 1)
     }
 }

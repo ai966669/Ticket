@@ -22,7 +22,7 @@ class DiscoveryViewController: UIViewController {
 //        let customAllowedSet =  NSCharacterSet(charactersInString:"`#%^{}\"[]|\\<> +").invertedSet
 //        paramsInStr=paramsInStr.stringByAddingPercentEncodingWithAllowedCharacters(customAllowedSet)!
 //        request.HTTPBody = paramsInStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
-        let request = NSURLRequest.init(URL: NSURL.init(string: "http://www.youku.com")!)
+        let request = NSURLRequest.init(URL: NSURL.init(string: "http://121.43.63.65/activity/activity/index")!)
         webView.loadRequest(request)
         view.addSubview(webView)
     }

@@ -11,8 +11,10 @@ import UIKit
 class MainTabbar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.tabBar.tintColor = UIColor.TopicColor()
-//        createTitleView("首页")
+        print("self.navigationController=%@",self.navigationController)
+        tabBar.tintColor = UIColor.TopicColor()
+        title="首页"
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
     }
 //    private  func createTitleView(titleStr:String){
 //        let lbl=UILabel.init(frame: CGRectMake(0, 0, ScreenW, 44))

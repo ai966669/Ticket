@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             navLogin = UINavigationController(rootViewController: aLoginViewController!)
             
-            navMain?.navigationBar.tintColor=UIColor.whiteColor()
+            navMain?.navigationBar.tintColor=UIColor.TopicColor()
             
             navMain?.navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.whiteColor()]
             
@@ -75,10 +75,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             navMain = UINavigationController(rootViewController: aStroyBoardSource.instantiateInitialViewController()!)
             
+            print("navMain=%@",navMain);
+            
             navMain?.navigationBar.tintColor=UIColor.whiteColor()
             
+           navMain?.navigationBar.barTintColor = UIColor.TopicColor()
+            
             navMain?.navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:UIColor.whiteColor()]
-
+            
         }
         
         self.window?.rootViewController=navMain

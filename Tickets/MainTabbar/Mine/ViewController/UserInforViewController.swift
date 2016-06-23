@@ -118,11 +118,11 @@ extension UserInforViewController:UITableViewDelegate,UITableViewDataSource{
         //        tableView.endUpdates()
         //        let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
     }
-    func changeAvatorImg(){
+//    func changeAvatorImg(){
 //dohere加上可以从相册获取
 //        UIActionSheet *aUIActionSheet=UIActionSheet()
-    }
-    func ch1angeAvatorImg(){
+//    }
+    func changeAvatorImg(){
         if (HelpFromOc.isCameraAvalible()){
             //创建图片控制器
             let picker = UIImagePickerController()

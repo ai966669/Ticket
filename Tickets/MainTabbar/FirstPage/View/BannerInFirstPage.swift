@@ -7,8 +7,12 @@
 //
 
 import UIKit
+protocol BannerInFirstPageDelegate:NSObjectProtocol{
+    func clickOnIndex(index:Int);
+}
 
 class BannerInFirstPage: UIScrollView {
+    var bannerInFirstPageDelegate : BannerInFirstPageDelegate?
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
@@ -21,27 +25,38 @@ class BannerInFirstPage: UIScrollView {
         self.showsHorizontalScrollIndicator=false;
         contentSize=CGSizeMake(frame.width*CGFloat(imgUrls.count), frame.height)
         if imgUrls.count >= 1{
-        for i in 0...imgUrls.count-1 {
-            let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, frame.width, frame.height))
-            imgView.sd_setImageWithURL(imgUrls[i], placeholderImage: UIImage.init(named: "candel.jpg"), completed: { (img, err, _, _) in
-                if err != nil{
-                    
-                }else{
-                    
-                }
-            })
-            addSubview(imgView)
+            for i in 0...imgUrls.count-1 {
+                let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, frame.width, frame.height))
+                imgView.sd_setImageWithURL(imgUrls[i], placeholderImage: UIImage.init(named: "candel.jpg"), completed: { (img, err, _, _) in
+                    if err != nil{
+                        
+                    }else{
+                        
+                    }
+                })
+                let getsture=UITapGestureRecognizer.init(target: self, action: #selector(BannerInFirstPage.goLink(_:)))
+                getsture.numberOfTapsRequired=1
+                getsture.numberOfTouchesRequired=1
+                imgView.addGestureRecognizer(getsture)
+                imgView.userInteractionEnabled=true
+                imgView.tag = i;
+                addSubview(imgView)
+            }
         }
+    }
+    func goLink(sender:UITapGestureRecognizer){
+        if((bannerInFirstPageDelegate) != nil){
+            bannerInFirstPageDelegate?.clickOnIndex((sender.view?.tag)!)
         }
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+     // Only override drawRect: if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func drawRect(rect: CGRect) {
+     // Drawing code
+     }
+     */
 }

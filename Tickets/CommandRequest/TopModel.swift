@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CocoaSecurity
 typealias SessionFailBlock = (code:Int) -> Void
 typealias SessionSuccessBlock = (model : AnyObject?) -> Void
 
