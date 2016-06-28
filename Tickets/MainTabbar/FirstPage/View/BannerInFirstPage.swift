@@ -19,6 +19,10 @@ class BannerInFirstPage: UIScrollView {
     }
     init(frame:CGRect,imgUrls:[NSURL]) {
         super.init(frame:frame)
+        setImgUrls(imgUrls)
+    }
+
+    func setImgUrls(imgUrls:[NSURL]){
         self.pagingEnabled=true
         self.scrollEnabled=true
         self.showsVerticalScrollIndicator=false;

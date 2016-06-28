@@ -28,7 +28,6 @@ class Ticket:NSObject {
     var status = 1;
     var storage = -1
     var title = ""
-    
     var coverImg=""
     var score = 100
     var rules="" //兑换条件
@@ -37,8 +36,8 @@ class Ticket:NSObject {
 class MFirstPageTableView: TopModel {
     var banners:[Banner]!
     var tickets:[Ticket]!
-    func getDataForTicketsList(doLater:()->Void){
-        let param = TopModel.specialProcess(["page":1,"pageSize":10]);
+    func getDataForTicketsList(pageSize:Int,doLater:()->Void){
+        let param = TopModel.specialProcess(["page":1,"pageSize":pageSize]);
         TopModel.universalRequest(requestMethod: Method.GET, dic: param, urlMethod: TKConfig.URLCouponCouponList, success: { (model) in
             
             if let rInDic = model!["result"]   as? Dictionary<String,AnyObject>{

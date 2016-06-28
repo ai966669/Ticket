@@ -36,7 +36,7 @@
 		45662C731CF4B6BB005E0807 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45662C721CF4B6BB005E0807 /* test.jpg */; };
 		4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */; };
 		4569F0471CDA4ACC009CA42F /* FirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */; };
-		4569F04B1CDA4B92009CA42F /* FirstPageTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04A1CDA4B92009CA42F /* FirstPageTableDataSource.swift */; };
+		4569F04B1CDA4B92009CA42F /* FirstPageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */; };
 		4569F04D1CDA4FBE009CA42F /* MFirstPageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04C1CDA4FBE009CA42F /* MFirstPageTableView.swift */; };
 		456AD7D91CF5D3C6003E3563 /* LoginNeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7D81CF5D3C6003E3563 /* LoginNeedViewController.swift */; };
 		456AD7DB1CF5D6D0003E3563 /* HWJNavControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */; };
@@ -121,7 +121,7 @@
 		45662C721CF4B6BB005E0807 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewCell.swift; sourceTree = "<group>"; };
 		4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageTableViewCell.xib; sourceTree = "<group>"; };
-		4569F04A1CDA4B92009CA42F /* FirstPageTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableDataSource.swift; sourceTree = "<group>"; };
+		4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableView.swift; sourceTree = "<group>"; };
 		4569F04C1CDA4FBE009CA42F /* MFirstPageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFirstPageTableView.swift; sourceTree = "<group>"; };
 		456AD7D81CF5D3C6003E3563 /* LoginNeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNeedViewController.swift; sourceTree = "<group>"; };
 		456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWJNavControllerViewController.swift; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		450EBC421CD8E86D004ADD37 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4569F04A1CDA4B92009CA42F /* FirstPageTableDataSource.swift */,
+				4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */,
 				45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */,
 				4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */,
 				4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */,
@@ -670,7 +670,7 @@
 				458DBC5D1CD5A197001F45B0 /* Result.swift in Sources */,
 				4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */,
 				453976031D184E48003D6D20 /* ColorExtension.swift in Sources */,
-				4569F04B1CDA4B92009CA42F /* FirstPageTableDataSource.swift in Sources */,
+				4569F04B1CDA4B92009CA42F /* FirstPageTableView.swift in Sources */,
 				45B83D421CD8EB9400F23E4F /* BannerInFirstPage.swift in Sources */,
 				458DBC561CD5A197001F45B0 /* Error.swift in Sources */,
 				45FD9DFF1D1C4A65002503C0 /* UniversialWebViewViewController.swift in Sources */,

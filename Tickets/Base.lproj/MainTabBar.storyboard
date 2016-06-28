@@ -64,8 +64,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8z-7V-h0H">
                                 <rect key="frame" x="0.0" y="64" width="600" height="250"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-Zy-9Tr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-Zy-9Tr">
                                         <rect key="frame" x="245" y="58" width="110" height="102"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="102" id="Bc1-ZR-O96"/>
+                                            <constraint firstAttribute="width" constant="110" id="LX9-lD-OJA"/>
+                                        </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLO-7Y-IFX">
                                         <rect key="frame" x="77" y="102" width="30" height="30"/>
@@ -74,8 +78,8 @@
                                             <action selector="signUp:" destination="kFK-zd-Tet" eventType="touchUpInside" id="b4v-f8-DdV"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="累计节省" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-t2-E4N">
-                                        <rect key="frame" x="230" y="202" width="68" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计节省" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2O-t2-E4N">
+                                        <rect key="frame" x="266" y="201" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -83,7 +87,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.72941176470000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="y2O-t2-E4N" firstAttribute="top" secondItem="rmJ-Zy-9Tr" secondAttribute="bottom" constant="41" id="5bn-hn-VeP"/>
+                                    <constraint firstItem="rmJ-Zy-9Tr" firstAttribute="centerX" secondItem="b8z-7V-h0H" secondAttribute="centerX" id="NAq-fY-2IZ"/>
+                                    <constraint firstItem="y2O-t2-E4N" firstAttribute="centerX" secondItem="rmJ-Zy-9Tr" secondAttribute="centerX" id="TXP-Lh-8DO"/>
                                     <constraint firstAttribute="height" constant="250" id="Xa3-Rb-HbZ"/>
+                                    <constraint firstItem="rmJ-Zy-9Tr" firstAttribute="top" secondItem="b8z-7V-h0H" secondAttribute="top" constant="58" id="cst-D5-gVB"/>
                                 </constraints>
                             </view>
                         </subviews>
