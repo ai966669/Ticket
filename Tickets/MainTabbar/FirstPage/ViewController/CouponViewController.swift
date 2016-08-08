@@ -13,10 +13,10 @@ class CouponViewController: LoginNeedViewController {
     
     var tableView:UITableView!
     var couponTableView:CouponTableView!
-    var ticket:Ticket!
+    var couponM=MCouponViewController()
     init(aTicket:Ticket){
         super.init(nibName: nil, bundle: nil)
-        ticket=aTicket
+        couponM.ticket=aTicket
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,20 +28,22 @@ class CouponViewController: LoginNeedViewController {
         initView()
         // Do any additional setup after loading the view.
     }
+    
     func initView(){
         initTableView()
     }
+    
     func initTableView(){
         tableView = UITableView()
         view.addSubview(tableView)
         tableView.snp_makeConstraints { (make) in
              make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 0, 0))
         }
-        couponTableView=CouponTableView.init(aTicket: ticket, aTableView: tableView)
-        tableView.delegate=couponTableView
-        tableView.dataSource=couponTableView
+        couponTableView=CouponTableView.init(aTicket: couponM.ticket, aTableView: tableView)
+        couponTableView.couponTableViewDelegate = self
         view.addSubview(tableView)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,4 +60,14 @@ class CouponViewController: LoginNeedViewController {
     }
     */
 
+}
+extension CouponViewController:CouponTableViewDelegate{
+    func tryShop(ticket: Ticket) {
+        couponM.shopNow({ (order) in
+            let orderDetailViewController:OrderDetailViewController = OrderDetailViewController.init(isFromCoponDetail: true, aOrder: order)
+            self.navigationController?.pushViewController(orderDetailViewController, animated: true)
+            }) { (code) in
+                
+        }
+    }
 }

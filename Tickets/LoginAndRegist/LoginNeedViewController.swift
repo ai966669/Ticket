@@ -51,7 +51,7 @@ class LoginNeedViewController: UIViewController {
         return aLoginViewController!
     }
     func checkLogin(doAfterLogin:()->Void){
-        if UserModel.shareManager.phone == ""{
+        if UserModel.shareManager.phone != ""{
             self.doAfterLogin=doAfterLogin;
             navLoginViewController =  UINavigationController(rootViewController: createLoginViewControllerFromInside())
             self.presentViewController(navLoginViewController!, animated: true, completion: nil)

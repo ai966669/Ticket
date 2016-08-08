@@ -16,6 +16,8 @@
 		4525BE061CDB96870065E6AE /* MDiscoveryUniversay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE051CDB96870065E6AE /* MDiscoveryUniversay.swift */; };
 		4525BE091CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525BE071CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.swift */; };
 		4525BE0A1CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4525BE081CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.xib */; };
+		453235F01D2EA2E10013359B /* MyCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453235EE1D2EA2E10013359B /* MyCouponTableViewCell.swift */; };
+		453235F11D2EA2E10013359B /* MyCouponTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453235EF1D2EA2E10013359B /* MyCouponTableViewCell.xib */; };
 		45364BDD1CE8BA850033B7D0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BDA1CE8BA850033B7D0 /* UserModel.swift */; };
 		45364BDF1CE8BADF0033B7D0 /* UserInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */; };
 		45364BE11CE8BAF60033B7D0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45364BE01CE8BAF60033B7D0 /* MineViewController.swift */; };
@@ -34,6 +36,7 @@
 		4549AF901D1847E7008DD8C3 /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF851D1847E7008DD8C3 /* TopModel.swift */; };
 		45662C711CF4B399005E0807 /* IMG_7064.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 45662C701CF4B399005E0807 /* IMG_7064.PNG */; };
 		45662C731CF4B6BB005E0807 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45662C721CF4B6BB005E0807 /* test.jpg */; };
+		4567DDED1D27FDE900AC7B2E /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567DDEB1D27FDE900AC7B2E /* OrderDetailViewController.swift */; };
 		4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */; };
 		4569F0471CDA4ACC009CA42F /* FirstPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */; };
 		4569F04B1CDA4B92009CA42F /* FirstPageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */; };
@@ -42,6 +45,8 @@
 		456AD7DB1CF5D6D0003E3563 /* HWJNavControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */; };
 		456AD7DE1CF5D8C9003E3563 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */; };
 		456AD7E21CF5E4A3003E3563 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456AD7E11CF5E4A3003E3563 /* Images.xcassets */; };
+		456DB1831D2435BE00B58FB4 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456DB1821D2435BE00B58FB4 /* UILabelExtension.swift */; };
+		456DB1851D2437E100B58FB4 /* TagViewInCouponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456DB1841D2437E100B58FB4 /* TagViewInCouponDetailView.swift */; };
 		4573A3AF1CDF99F2008A2C00 /* RegstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573A3AE1CDF99F2008A2C00 /* RegstViewController.swift */; };
 		457CE56E1CD3957700D3BA05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457CE56D1CD3957700D3BA05 /* LoginViewController.swift */; };
 		457CE5701CD3959000D3BA05 /* LoginAndRegist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457CE56F1CD3959000D3BA05 /* LoginAndRegist.storyboard */; };
@@ -60,6 +65,12 @@
 		458DBC601CD5A197001F45B0 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DBC521CD5A197001F45B0 /* Upload.swift */; };
 		458DBC611CD5A197001F45B0 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458DBC531CD5A197001F45B0 /* Validation.swift */; };
 		45B83D421CD8EB9400F23E4F /* BannerInFirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */; };
+		45BAF7651D2C0CB0008CF270 /* MOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAF7641D2C0CB0008CF270 /* MOrderDetailViewController.swift */; };
+		45BE1DBA1D2D434A00E7851D /* MyCouponListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE1DB91D2D434A00E7851D /* MyCouponListViewController.swift */; };
+		45BE1DBC1D2D598400E7851D /* MMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE1DBB1D2D598400E7851D /* MMineViewController.swift */; };
+		45D31E7A1D2AB62C0025A15D /* OrderDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D31E791D2AB62C0025A15D /* OrderDetailTableView.swift */; };
+		45D31E7C1D2AB8240025A15D /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D31E7B1D2AB8240025A15D /* OrderDetailView.swift */; };
+		45D31E7E1D2AC2F80025A15D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D31E7D1D2AC2F80025A15D /* Order.swift */; };
 		45DFF1381CD338A2002C0814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DFF1371CD338A2002C0814 /* AppDelegate.swift */; };
 		45DFF13F1CD338A2002C0814 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DFF13D1CD338A2002C0814 /* MainTabBar.storyboard */; };
 		45DFF1441CD338A2002C0814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DFF1421CD338A2002C0814 /* LaunchScreen.storyboard */; };
@@ -99,6 +110,8 @@
 		4525BE051CDB96870065E6AE /* MDiscoveryUniversay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDiscoveryUniversay.swift; sourceTree = "<group>"; };
 		4525BE071CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryUniversayTableViewCell.swift; sourceTree = "<group>"; };
 		4525BE081CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryUniversayTableViewCell.xib; sourceTree = "<group>"; };
+		453235EE1D2EA2E10013359B /* MyCouponTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCouponTableViewCell.swift; sourceTree = "<group>"; };
+		453235EF1D2EA2E10013359B /* MyCouponTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCouponTableViewCell.xib; sourceTree = "<group>"; };
 		45364BDA1CE8BA850033B7D0 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInforViewController.swift; sourceTree = "<group>"; };
 		45364BE01CE8BAF60033B7D0 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +132,7 @@
 		4549AF851D1847E7008DD8C3 /* TopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
 		45662C701CF4B399005E0807 /* IMG_7064.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_7064.PNG; sourceTree = "<group>"; };
 		45662C721CF4B6BB005E0807 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		4567DDEB1D27FDE900AC7B2E /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
 		4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableViewCell.swift; sourceTree = "<group>"; };
 		4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPageTableViewCell.xib; sourceTree = "<group>"; };
 		4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageTableView.swift; sourceTree = "<group>"; };
@@ -128,6 +142,8 @@
 		456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		456AD7E11CF5E4A3003E3563 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		456D146C1CD3A12D005EE9E0 /* Tickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tickets-Bridging-Header.h"; path = "CommandMethod/Tickets-Bridging-Header.h"; sourceTree = "<group>"; };
+		456DB1821D2435BE00B58FB4 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		456DB1841D2437E100B58FB4 /* TagViewInCouponDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewInCouponDetailView.swift; sourceTree = "<group>"; };
 		4573A3AE1CDF99F2008A2C00 /* RegstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegstViewController.swift; sourceTree = "<group>"; };
 		457CE56D1CD3957700D3BA05 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		457CE56F1CD3959000D3BA05 /* LoginAndRegist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginAndRegist.storyboard; sourceTree = "<group>"; };
@@ -147,6 +163,12 @@
 		458DBC521CD5A197001F45B0 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
 		458DBC531CD5A197001F45B0 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerInFirstPage.swift; sourceTree = "<group>"; };
+		45BAF7641D2C0CB0008CF270 /* MOrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOrderDetailViewController.swift; sourceTree = "<group>"; };
+		45BE1DB91D2D434A00E7851D /* MyCouponListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCouponListViewController.swift; sourceTree = "<group>"; };
+		45BE1DBB1D2D598400E7851D /* MMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMineViewController.swift; sourceTree = "<group>"; };
+		45D31E791D2AB62C0025A15D /* OrderDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailTableView.swift; sourceTree = "<group>"; };
+		45D31E7B1D2AB8240025A15D /* OrderDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
+		45D31E7D1D2AC2F80025A15D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		45DFF1341CD338A2002C0814 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DFF1371CD338A2002C0814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DFF13E1CD338A2002C0814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainTabBar.storyboard; sourceTree = "<group>"; };
@@ -205,13 +227,14 @@
 		450EBC421CD8E86D004ADD37 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */,
-				45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */,
+				456DB1841D2437E100B58FB4 /* TagViewInCouponDetailView.swift */,
 				4569F0441CDA4ACC009CA42F /* FirstPageTableViewCell.swift */,
 				4569F0451CDA4ACC009CA42F /* FirstPageTableViewCell.xib */,
-				45118D211D0D876000B4E2E3 /* CouponTableView.swift */,
 				45F681381D0F05AC004C1433 /* CoponTableViewHeadView.swift */,
 				45118D251D0D8BCB00B4E2E3 /* CoupnDescriptionsTableViewCell.swift */,
+				45B83D411CD8EB9400F23E4F /* BannerInFirstPage.swift */,
+				45118D211D0D876000B4E2E3 /* CouponTableView.swift */,
+				4569F04A1CDA4B92009CA42F /* FirstPageTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				45364BDA1CE8BA850033B7D0 /* UserModel.swift */,
+				45D31E7D1D2AC2F80025A15D /* Order.swift */,
+				45BAF7641D2C0CB0008CF270 /* MOrderDetailViewController.swift */,
+				45BE1DBB1D2D598400E7851D /* MMineViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				45364BE41CE8C4A30033B7D0 /* AvatarTableViewCell.swift */,
+				45D31E791D2AB62C0025A15D /* OrderDetailTableView.swift */,
+				45D31E7B1D2AB8240025A15D /* OrderDetailView.swift */,
+				453235EE1D2EA2E10013359B /* MyCouponTableViewCell.swift */,
+				453235EF1D2EA2E10013359B /* MyCouponTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +304,8 @@
 				45662C701CF4B399005E0807 /* IMG_7064.PNG */,
 				45364BE01CE8BAF60033B7D0 /* MineViewController.swift */,
 				45364BDE1CE8BADF0033B7D0 /* UserInforViewController.swift */,
+				4567DDEB1D27FDE900AC7B2E /* OrderDetailViewController.swift */,
+				45BE1DB91D2D434A00E7851D /* MyCouponListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -283,6 +315,7 @@
 			children = (
 				453976001D184E48003D6D20 /* BtnExtension.swift */,
 				453976011D184E48003D6D20 /* ColorExtension.swift */,
+				456DB1821D2435BE00B58FB4 /* UILabelExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -545,7 +578,7 @@
 				TargetAttributes = {
 					45DFF1331CD338A2002C0814 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = J96G49N5M7;
+						DevelopmentTeam = ZM7596U25B;
 					};
 					45DFF1491CD338A2002C0814 = {
 						CreatedOnToolsVersion = 7.3;
@@ -591,6 +624,7 @@
 				45662C711CF4B399005E0807 /* IMG_7064.PNG in Resources */,
 				4525BE0A1CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.xib in Resources */,
 				45DFF13F1CD338A2002C0814 /* MainTabBar.storyboard in Resources */,
+				453235F11D2EA2E10013359B /* MyCouponTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,15 +700,18 @@
 				45DFF16A1CD33A4C002C0814 /* MainTabbar.swift in Sources */,
 				4525BE091CDB96A30065E6AE /* DiscoveryUniversayTableViewCell.swift in Sources */,
 				4569F04D1CDA4FBE009CA42F /* MFirstPageTableView.swift in Sources */,
+				45D31E7E1D2AC2F80025A15D /* Order.swift in Sources */,
 				45DFF1381CD338A2002C0814 /* AppDelegate.swift in Sources */,
 				458DBC5D1CD5A197001F45B0 /* Result.swift in Sources */,
 				4569F0461CDA4ACC009CA42F /* FirstPageTableViewCell.swift in Sources */,
 				453976031D184E48003D6D20 /* ColorExtension.swift in Sources */,
 				4569F04B1CDA4B92009CA42F /* FirstPageTableView.swift in Sources */,
+				45BE1DBC1D2D598400E7851D /* MMineViewController.swift in Sources */,
 				45B83D421CD8EB9400F23E4F /* BannerInFirstPage.swift in Sources */,
 				458DBC561CD5A197001F45B0 /* Error.swift in Sources */,
 				45FD9DFF1D1C4A65002503C0 /* UniversialWebViewViewController.swift in Sources */,
 				4549AF891D1847E7008DD8C3 /* DatabaseUserDefaults.swift in Sources */,
+				456DB1831D2435BE00B58FB4 /* UILabelExtension.swift in Sources */,
 				456AD7DB1CF5D6D0003E3563 /* HWJNavControllerViewController.swift in Sources */,
 				45118D221D0D876000B4E2E3 /* CouponTableView.swift in Sources */,
 				4549AF901D1847E7008DD8C3 /* TopModel.swift in Sources */,
@@ -688,18 +725,24 @@
 				4549AF881D1847E7008DD8C3 /* D3Json.swift in Sources */,
 				4549AF8A1D1847E7008DD8C3 /* DefineSwift.swift in Sources */,
 				4549AF8C1D1847E7008DD8C3 /* ImgDownloadQueen.swift in Sources */,
+				45D31E7C1D2AB8240025A15D /* OrderDetailView.swift in Sources */,
 				4573A3AF1CDF99F2008A2C00 /* RegstViewController.swift in Sources */,
 				458DBC5B1CD5A197001F45B0 /* Request.swift in Sources */,
 				453976021D184E48003D6D20 /* BtnExtension.swift in Sources */,
 				4525BE041CDB965A0065E6AE /* DiscoveryUniversalTableViewDataSource.swift in Sources */,
 				457CE56E1CD3957700D3BA05 /* LoginViewController.swift in Sources */,
+				456DB1851D2437E100B58FB4 /* TagViewInCouponDetailView.swift in Sources */,
 				456AD7D91CF5D3C6003E3563 /* LoginNeedViewController.swift in Sources */,
 				45118D261D0D8BCB00B4E2E3 /* CoupnDescriptionsTableViewCell.swift in Sources */,
 				456AD7DE1CF5D8C9003E3563 /* CouponViewController.swift in Sources */,
+				453235F01D2EA2E10013359B /* MyCouponTableViewCell.swift in Sources */,
 				4549AF8F1D1847E7008DD8C3 /* NZZCheckingOfInput.m in Sources */,
+				4567DDED1D27FDE900AC7B2E /* OrderDetailViewController.swift in Sources */,
 				4549AF8E1D1847E7008DD8C3 /* MUpToFile.swift in Sources */,
 				450EBC451CD8E86D004ADD37 /* FirstPageViewController.swift in Sources */,
 				458DBC611CD5A197001F45B0 /* Validation.swift in Sources */,
+				45BAF7651D2C0CB0008CF270 /* MOrderDetailViewController.swift in Sources */,
+				45BE1DBA1D2D434A00E7851D /* MyCouponListViewController.swift in Sources */,
 				45F681391D0F05AC004C1433 /* CoponTableViewHeadView.swift in Sources */,
 				4549AF871D1847E7008DD8C3 /* CodeRequest.swift in Sources */,
 				458DBC591CD5A197001F45B0 /* MultipartFormData.swift in Sources */,
@@ -712,6 +755,7 @@
 				45364BE61CE8C4A30033B7D0 /* AvatarTableViewCell.swift in Sources */,
 				458DBC5C1CD5A197001F45B0 /* ResponseSerialization.swift in Sources */,
 				458DBC551CD5A197001F45B0 /* Download.swift in Sources */,
+				45D31E7A1D2AB62C0025A15D /* OrderDetailTableView.swift in Sources */,
 				458DBC581CD5A197001F45B0 /* Manager.swift in Sources */,
 				4549AF8D1D1847E7008DD8C3 /* MCommandRequest.swift in Sources */,
 			);
@@ -869,9 +913,9 @@
 				INFOPLIST_FILE = Tickets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred0808;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7175e356-96b8-4056-a24c-16da507ce887";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tickets/CommandMethod/Tickets-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -884,7 +928,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -894,7 +938,7 @@
 				INFOPLIST_FILE = Tickets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred0808;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tickets/CommandMethod/Tickets-Bridging-Header.h";

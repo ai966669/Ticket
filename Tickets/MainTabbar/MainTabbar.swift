@@ -34,7 +34,8 @@ extension MainTabbar{
             navigationController?.setNavigationBarHidden(true, animated: false)
         case 3:
             title="我的"
-             navigationController?.setNavigationBarHidden(false, animated: false)
+             navigationController?.setNavigationBarHidden(true, animated: false)
+//            navigationController?.navigationBar.hidden = true
         default:
             navigationController?.setNavigationBarHidden(false, animated: false)
         }

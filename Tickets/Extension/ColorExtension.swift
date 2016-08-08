@@ -18,4 +18,17 @@ extension UIColor{
     class func TopicColor() -> UIColor{
         return ColorByRGB(234, G: 0, B: 0, A: 1)
     }
+    
+    class func SubTextColor() -> UIColor{
+        return ColorByRGB(153, G: 153, B: 153, A: 1)
+    }
+    
+    class func BlackTextColor() -> UIColor{
+        return ColorByRGB(76, G: 76, B: 76, A: 1)
+    }
+    
+    
+    class func SeperateLineColor() -> UIColor{
+        return ColorByRGB(239, G: 239, B: 244, A: 1)
+    }
 }

@@ -79,6 +79,10 @@ let URLOrderCashback = "/order/cashback"
 
 //购卡
 let URLCardCreateCharge="/card/create/charge"
+
+/// 我的券吧
+let URLOrderOrderList="/order/order/list"
+
 //code : -1.网络问题，未连接上服务器，-2 返回数据为空 -3code 返回的必要数据为空 -4.提示Msg为nil -5.解析错误
 let codeTokenUnvalible = -1014
 let codeOverTime = 3840 //属于-1中的问题
@@ -135,13 +139,13 @@ class TopModel: NSObject {
     private class func addNeccessayParamUniversal(var params:Dictionary<String, String>)->Dictionary<String, String>{
         // 必要字段   session_id，nonc
         if UserModel.shareManager.sessionId != ""{
-            params["session_id"] = UserModel.shareManager.sessionId
+            params["sessionId"] = UserModel.shareManager.sessionId
         }else{
-            let token : (session_id:String,isHaveToken:Bool) = DatabaseUserDefaults.shareManager.isHaveSession_id()
+            let token : (session_id:String,isHaveToken:Bool) = DatabaseUserDefaults.shareManager.isHaveSessionId()
             if  token.isHaveToken{
-                params["session_id"] = token.session_id
+                params["sessionId"] = token.session_id
             }else{
-                params["session_id"] = "default"
+                params["sessionId"] = "default"
             }
         }
 //        if UserModel.shareManager.id != 0{

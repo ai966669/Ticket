@@ -20,5 +20,5 @@ let ScreenH = UIScreen.mainScreen().bounds.height
 // tabbar高度
 let HeightDefaultTabbar:CGFloat = 49
 //导航栏高度
-let HeightDefaultNavigationBar:CGFloat =  44
+let HeightDefaultNavigationBar:CGFloat =  64
 

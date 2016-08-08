@@ -11,19 +11,14 @@ import UIKit
 class DatabaseUserDefaults: NSObject {
     static let shareManager = DatabaseUserDefaults()
     func setSessionId(session_id:String){
-        NSUserDefaults.standardUserDefaults().setValue(session_id, forKey: TKConfig.UD_LastTimeSignSession_id)
+        NSUserDefaults.standardUserDefaults().setValue(session_id, forKey: TKConfig.UD_LastTimeSignSessionId)
     }
-    func isHaveSession_id() -> (String,Bool){
-        if let session_id = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeSignSession_id) as? String {
-            if session_id != ""  {
-                return (session_id,true)
+    func isHaveSessionId() -> (String,Bool){
+        if let sessionId = NSUserDefaults.standardUserDefaults().valueForKey(TKConfig.UD_LastTimeSignSessionId) as? String {
+            if sessionId != ""  {
+                return (sessionId,true)
             }
         }
         return ("",false)
     }
-//    func <#name#>(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
-//    
-//    nsuserda
 }

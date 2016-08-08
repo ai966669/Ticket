@@ -10,19 +10,38 @@ import UIKit
 
 class MineViewController: UIViewController  {
     
-    @IBOutlet var lblMoneySave: UILabel!
+    @IBOutlet var lblMoneySave: UILabel!{
+        didSet{
+            lblMoneySave.text = "101元"
+            setlblMoneySaveAtttribute()
+        }
+    }
     @IBOutlet var imgViewUserImg: UIImageView!
     @IBOutlet var viewHalfBackgroundBefore: UIView!
-    
+    @IBOutlet var lblUserName: UILabel!{
+        didSet{
+            lblUserName.text =  UserModel.shareManager.userName 
+        }
+    }
     var tabelView:UITableView!
     var cellTitles=[["我的活动","我的券吧"],["关于我们"]]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.DefaultBackgroundColor()
+        initView()
+        // Do any additional setup after loading the view.
+    }
+    func  setlblMoneySaveAtttribute() {
+        //富文本设置
+        let attributeString = NSMutableAttributedString(string:lblMoneySave.text!)
+        //从文本0开始6个字符字体HelveticaNeue-Bold,16号
+        attributeString.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(11.5),
+                                     range: NSMakeRange((lblMoneySave.text?.characters.count)!-1,1))
+        lblMoneySave.attributedText = attributeString
+    }
+    func initView(){
         initImgViewUserImg()
         initTableview()
-        // Do any additional setup after loading the view.
     }
     func initTableview(){
         tabelView=UITableView.init(frame: CGRectMake(0, viewHalfBackgroundBefore.frame.height+viewHalfBackgroundBefore.frame.origin.y+20, ScreenW, ScreenH))
@@ -37,7 +56,6 @@ class MineViewController: UIViewController  {
             if ((err) != nil){
                 Log("sb\(err)")
             }
-            print("cg")
         }
         let getsture=UITapGestureRecognizer .init(target: self, action: #selector(MineViewController.showInfor))
         getsture.numberOfTapsRequired=1
@@ -45,10 +63,12 @@ class MineViewController: UIViewController  {
         imgViewUserImg.addGestureRecognizer(getsture)
         imgViewUserImg.userInteractionEnabled=true
     }
+    
     func showInfor(){
         let aUserInforViewControllera=UserInforViewController()
         self.navigationController?.pushViewController(aUserInforViewControllera, animated: true)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,16 +82,26 @@ class MineViewController: UIViewController  {
         }
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     
     @IBAction func signUp(sender: AnyObject) {
+        UserModel.shareManager.signUp()
         
-        
-        let data=UIImageJPEGRepresentation(UIImage.init(named: "candel.jpg")!, 1);
-    MUpToFile.upToFile(data!, backInfo: { (_, _, _) in
-        
-        }) { 
-            
-        }
+//        let data=UIImageJPEGRepresentation(UIImage.init(named: "candel.jpg")!, 1);
+//        MUpToFile.upToFile(data!, backInfo: { (_, _, _) in
+//        
+//        }) { 
+//            
+//        }
     }
     
     /*

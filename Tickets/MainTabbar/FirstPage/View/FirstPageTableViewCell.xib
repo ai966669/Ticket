@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝岛金点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH6-ex-eDf">
@@ -29,7 +29,7 @@
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scoreicon" translatesAutoresizingMaskIntoConstraints="NO" id="HyV-S8-SA4">
-                        <rect key="frame" x="122" y="39" width="17" height="17"/>
+                        <rect key="frame" x="122" y="38" width="17" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="17" id="MQi-Na-ryo"/>
                             <constraint firstAttribute="height" constant="17" id="P9T-ej-Bam"/>
@@ -53,7 +53,7 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兑换人数：1013人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSO-4e-7Pg">
-                        <rect key="frame" x="122" y="64" width="75" height="11"/>
+                        <rect key="frame" x="122" y="63" width="75" height="11"/>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>

@@ -19,19 +19,24 @@ class BannerInFirstPage: UIScrollView {
     }
     init(frame:CGRect,imgUrls:[NSURL]) {
         super.init(frame:frame)
-        setImgUrls(imgUrls)
+        setImgUrls(imgUrls,aContentSize: nil)
     }
 
-    func setImgUrls(imgUrls:[NSURL]){
+    func setImgUrls(imgUrls:[NSURL],aContentSize:CGSize?){
+        
+        if ( aContentSize != nil ){
+            contentSize = aContentSize!;
+        }else{
+            contentSize = CGSizeMake(frame.width*CGFloat(imgUrls.count), frame.height)
+        }
         self.pagingEnabled=true
         self.scrollEnabled=true
         self.showsVerticalScrollIndicator=false;
         self.showsHorizontalScrollIndicator=false;
-        contentSize=CGSizeMake(frame.width*CGFloat(imgUrls.count), frame.height)
         if imgUrls.count >= 1{
             for i in 0...imgUrls.count-1 {
-                let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, frame.width, frame.height))
-                imgView.sd_setImageWithURL(imgUrls[i], placeholderImage: UIImage.init(named: "candel.jpg"), completed: { (img, err, _, _) in
+                let imgView=UIImageView.init(frame: CGRectMake(ScreenW*CGFloat(i), 0, contentSize.width/CGFloat(imgUrls.count), contentSize.height))
+                imgView.sd_setImageWithURL(imgUrls[i], placeholderImage: UIImage.init(named: "test.jpg"), completed: { (img, err, _, _) in
                     if err != nil{
                         
                     }else{

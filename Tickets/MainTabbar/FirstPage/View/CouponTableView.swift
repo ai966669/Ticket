@@ -8,39 +8,60 @@
 
 import UIKit
 
+protocol CouponTableViewDelegate {
+    func tryShop(ticket:Ticket);
+}
+
 class CouponTableView: NSObject,UITableViewDelegate,UITableViewDataSource{
     var ticket:Ticket!
     var tableViewO:UITableView!
     var coponTableViewHeadView:CoponTableViewHeadView!
     var footView:UIView!
+    var cellHeadView:UITableViewCell!
+    var couponTableViewDelegate:CouponTableViewDelegate?
     init(aTicket:Ticket,aTableView:UITableView) {
         super.init()
         ticket=aTicket
-        tableViewO = aTableView
-        tableViewO.separatorStyle = UITableViewCellSeparatorStyle.None
-        coponTableViewHeadView = CoponTableViewHeadView()
-        coponTableViewHeadView.setValue(aTicket)
-        tableViewO.tableHeaderView=coponTableViewHeadView;
+        initcellHeadView()
         initFootView()
+        tableViewO = aTableView
+        tableViewO.delegate=self
+        tableViewO.dataSource=self
+        tableViewO.separatorStyle = UITableViewCellSeparatorStyle.None
     }
+    
+    
+    func initcellHeadView() {
+        cellHeadView = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "cellHeadViewId")
+        cellHeadView.selectionStyle = UITableViewCellSelectionStyle.None
+        coponTableViewHeadView = CoponTableViewHeadView.init(frame: CGRectMake(0, 0, ScreenW, 375))//()
+        cellHeadView.contentView.addSubview(coponTableViewHeadView)
+        coponTableViewHeadView.setValue(ticket)
+    }
+    
     
     func initFootView(){
         footView =  UIView.init(frame: CGRectMake(0, 0, ScreenW, 60))
-        footView.backgroundColor = UIColor.yellowColor()
+        footView.backgroundColor = UIColor.clearColor()
         let btnShop = UIButton()
         footView.addSubview(btnShop)
         btnShop.snp_makeConstraints { (make) in
-            make.size.equalTo(CGSizeMake(0.4 * ScreenW, 40))
-            make.centerX.centerY.equalTo(footView)
+            make.height.equalTo(37)
+            make.centerX.equalTo(footView)
+            make.left.equalTo(footView).offset(14)
+            make.bottom.equalTo(footView).offset(-12)
         }
-        btnShop.backgroundColor = UIColor.redColor()
+        btnShop.backgroundColor = UIColor.TopicColor()
         btnShop.addTarget(self, action: #selector(CouponTableView.tryShop), forControlEvents: UIControlEvents.TouchUpInside)
-        btnShop.setTitle("我要消费", forState: UIControlState.Normal)
+        btnShop.setTitle("立即兑换", forState: UIControlState.Normal)
     }
     
     func tryShop(){
-        print("asds");
+        if(couponTableViewDelegate != nil){
+            couponTableViewDelegate!.tryShop(ticket)
+        }
     }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -48,30 +69,35 @@ class CouponTableView: NSObject,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return   ticket.descriptions.count
+        return  ticket.descriptions.count + 1
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return footView.frame.height
     }
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        return indexPath.row == 0 ? coponTableViewHeadView.heightAll : 100
     }
     
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return footView
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell =  tableView.dequeueReusableCellWithIdentifier("CouponTableViewCell")
-        if (cell == nil){
-            cell = CoupnDescriptionsTableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "CouponTableViewCell")
+        if indexPath.row == 0 {
+            return cellHeadView
+        }else{
+            var cell =  tableView.dequeueReusableCellWithIdentifier("CouponTableViewCell")
+            if (cell == nil){
+                cell = CoupnDescriptionsTableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "CouponTableViewCell")
+            }
+            cell!.selectionStyle = UITableViewCellSelectionStyle.None
+            if (cell is CoupnDescriptionsTableViewCell) {
+                (cell as! CoupnDescriptionsTableViewCell).setDescription(ticket.descriptions[indexPath.row-1])
+            }
+            return cell!
         }
-        cell!.selectionStyle = UITableViewCellSelectionStyle.None
-        if (cell is CoupnDescriptionsTableViewCell) {
-            (cell as! CoupnDescriptionsTableViewCell).setDescription(ticket.descriptions[indexPath.row])
-        }
-        
-        return cell!
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

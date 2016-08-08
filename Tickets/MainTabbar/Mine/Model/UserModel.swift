@@ -37,12 +37,18 @@ class UserModel: TopModel {
     }
     static let shareManager = UserModel()
     //dohere正在做登陆，考虑用宏定义来给UserModel做一个单例，
-//    func shareManager() -> UserModel {
-//        static instance =
-//        return
-//    }
+    //    func shareManager() -> UserModel {
+    //        static instance =
+    //        return
+    //    }
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
         //        print("没有forUndefinedKey----value:\(value) key:\(key)");
+    }
+    
+    override func setValue(value: AnyObject?, forKey key: String) {
+        Log("\(key)值\(value)")
+        super.setValue(value, forKey: key)
+        Log("\(key)成功")
     }
     class func loginByPsw(phone:String, password:String,success:SessionSuccessBlock,failure:SessionFailBlock) {
         let param = TopModel.specialProcess(["phone":phone,"password":password])
@@ -54,10 +60,10 @@ class UserModel: TopModel {
         }
     }
     class func loginByToken(failNoToekn:()->Void,failInLogin:()->Void,success:()->Void){
-        let token : (session_id:String,isHaveSession:Bool) = DatabaseUserDefaults.shareManager.isHaveSession_id()
+        let token : (session_id:String,isHaveSession:Bool) = DatabaseUserDefaults.shareManager.isHaveSessionId()
         if token.isHaveSession{
-            let param =   TopModel.specialProcess(["session_id":token.session_id])
-            TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLUserUserInfo, success: { (model) in
+            let param =   TopModel.specialProcess(["sessionId":token.session_id])
+            TopModel.universalRequest(requestMethod: Method.GET, dic: param, urlMethod: TKConfig.URLUserUserInfo, success: { (model) in
                 SVProgressHUD.showErrorWithStatus("登陆成功")
                 UserModel.shareManager.loginSuccess(model!)
                 success()
@@ -71,7 +77,7 @@ class UserModel: TopModel {
         }
     }
     func loginFail() {
-//       DatabaseUserDefaults.shareManager.setSession_id("")
+        //       DatabaseUserDefaults.shareManager.setSession_id("")
     }
     func loginOut(){
         resetData()
@@ -85,19 +91,18 @@ class UserModel: TopModel {
     }
     func resetUserInfor(){
         sessionId = ""
-         phone = ""
+        phone = ""
         userName = ""
         job=""
-         email = ""
-         avatarUrl=""
-         idCardNo=""
-         password = ""
-         hasMarked = 0
-         score = 0
+        email = ""
+        avatarUrl=""
+        idCardNo=""
+        password = ""
+        hasMarked = 0
+        score = 0
     }
     func  loginSuccess(model:AnyObject) {
         if let myDic = model as? Dictionary<String,AnyObject> {
-            
             if let modelDic = myDic["result"] as? Dictionary<String,AnyObject> {
                 UserModel.shareManager.setValuesForKeysWithDictionary(modelDic)
                 DatabaseUserDefaults.shareManager.setSessionId(UserModel.shareManager.sessionId)
@@ -107,21 +112,21 @@ class UserModel: TopModel {
     class func regist(phone:String,psw:String,code:String,success:SessionSuccessBlock,failure:SessionFailBlock) {
         
         let param =   TopModel.specialProcess(["phone":phone,"password":psw,"validate_code":code])
-
+        
         TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLUserUserRegist, success: { (model) in
-    
+            
             SVProgressHUD.showErrorWithStatus("asdf")
-            }) { (code) in
+        }) { (code) in
             SVProgressHUD.showErrorWithStatus("asdfasdfas")
         }
     }
     
     func signUp() {
-        let param =  TopModel.specialProcess(["session_id":UserModel.shareManager.sessionId]);
+        let param =  TopModel.unverisalProcess([:]);
         TopModel.universalRequest(requestMethod: Method.POST, dic: param, urlMethod: TKConfig.URLTaskMarkMark, success: { (model) in
             SVProgressHUD.showErrorWithStatus("签到成功")
         }) { (code) in
-//            SVProgressHUD.showErrorWithStatus("签到失败")
+            SVProgressHUD.showErrorWithStatus("签到失败")
         }
     }
     

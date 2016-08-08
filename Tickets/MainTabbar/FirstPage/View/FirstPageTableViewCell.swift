@@ -17,7 +17,7 @@ class FirstPageTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = UITableViewCellSelectionStyle.None
     }
 
     

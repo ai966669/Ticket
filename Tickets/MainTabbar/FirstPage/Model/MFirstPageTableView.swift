@@ -13,7 +13,7 @@ class Banner:NSObject {
     var status = 1
     var url = ""
 }
-class TicketDescription{
+class TicketDescription:NSObject{
     var title=""
     var content=""
 }
@@ -32,6 +32,23 @@ class Ticket:NSObject {
     var score = 100
     var rules="" //兑换条件
     var descriptions:[TicketDescription]=[]
+    var effectiveTime = ""
+    var refundable = true
+    override func setValue(value: AnyObject?, forUndefinedKey key: String) {
+        //        print("没有forUndefinedKey----value:\(value) key:\(key)");
+    }
+//nzzlb 如何将数组值赋值到[TicketDescription]中去，那么就可以摆脱D3JSON了
+//    override func setValue(value: AnyObject?, forKey key: String) {
+//        if (key == "descriptions"){
+//            if (value is NSArray){
+//                var a:Any = value
+//                var descriptionsInArr:NSArray = a
+//                NSDictionary *descriptionInDic = descriptionsInArr[0]
+//            }
+//        }else{
+//            super.setValue(value, forKey: key)
+//        }
+//    }
 }
 class MFirstPageTableView: TopModel {
     var banners:[Banner]!
@@ -39,7 +56,6 @@ class MFirstPageTableView: TopModel {
     func getDataForTicketsList(pageSize:Int,doLater:()->Void){
         let param = TopModel.specialProcess(["page":1,"pageSize":pageSize]);
         TopModel.universalRequest(requestMethod: Method.GET, dic: param, urlMethod: TKConfig.URLCouponCouponList, success: { (model) in
-            
             if let rInDic = model!["result"]   as? Dictionary<String,AnyObject>{
                 if let dataArr = rInDic["couponList"] as? NSArray {
                     if let ticketArr:[Ticket] = D3Json.jsonToModelList(dataArr, clazz: Ticket.self){

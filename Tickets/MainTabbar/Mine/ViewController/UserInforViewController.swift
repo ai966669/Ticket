@@ -45,6 +45,10 @@ class UserInforViewController: LoginNeedViewController {
     }
     
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     /*
      // MARK: - Navigation
      
@@ -123,6 +127,7 @@ extension UserInforViewController:UITableViewDelegate,UITableViewDataSource{
 //        UIActionSheet *aUIActionSheet=UIActionSheet()
 //    }
     func changeAvatorImg(){
+//        navigationController?.popViewControllerAnimated(true)
         if (HelpFromOc.isCameraAvalible()){
             //创建图片控制器
             let picker = UIImagePickerController()
@@ -175,4 +180,5 @@ extension UserInforViewController:UIImagePickerControllerDelegate, UINavigationC
     func loginout(){
         UserModel.shareManager.loginOut()
     }
+    
 }

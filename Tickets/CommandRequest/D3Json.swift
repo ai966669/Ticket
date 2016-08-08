@@ -149,7 +149,12 @@ public class D3Json{
                 let arr : [Ticket] = jsonToModelList(value, clazz: Ticket.self)
                 obj.setValue(arr, forKey: key)
             }
-            
+        case is [TicketDescription]:
+            let value: AnyObject? = dic.objectForKey(key)
+            if value != nil{
+                let arr : [TicketDescription] = jsonToModelList(value, clazz: TicketDescription.self)
+                obj.setValue(arr, forKey: key)
+            }
         default:     //unknow
             Log("key:\(key),unknow,sure that you hava init")
         }

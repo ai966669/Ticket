@@ -30,31 +30,30 @@ class CoupnDescriptionsTableViewCell: UITableViewCell {
     
     func  setDescription(ticketDescription:TicketDescription!){
         
-        lblTitle = UILabel.init()
-        contentView.addSubview(lblTitle)
-        lblTitle.translatesAutoresizingMaskIntoConstraints = false
-        
-        lblTitle.snp_makeConstraints { (make) in
-            make.left.equalTo(contentView).offset(8)
-            make.top.equalTo(contentView)
+        if (lblTitle==nil) {
+            lblTitle = UILabel.init()
+            contentView.addSubview(lblTitle)
+            lblTitle.numberOfLines = 0
+            lblTitle.snp_makeConstraints { (make) in
+                make.left.equalTo(contentView).offset(18)
+                make.top.equalTo(contentView)
+            }
+            lblTitle.setFontAndTextColor(12, aTextcolor: UIColor.SubTextColor())
         }
         
-        lblTitle.font = UIFont.systemFontOfSize(16)
-        lblTitle.textColor = UIColor.blueColor()
         lblTitle.text = ticketDescription.title
         
-        
-        lblContent = UILabel.init()
-        contentView.addSubview(lblContent)
-        lblContent.translatesAutoresizingMaskIntoConstraints = false
-        
-        lblContent.snp_makeConstraints { (make) in
-            make.left.equalTo(contentView).offset(8)
-            make.top.equalTo(lblTitle.snp_bottom).offset(8)
+        if ((lblContent == nil)) {
+            lblContent = UILabel.init()
+            contentView.addSubview(lblContent)
+            lblContent.numberOfLines = 0
+            lblContent.snp_makeConstraints { (make) in
+                make.left.equalTo(contentView).offset(18)
+                make.top.equalTo(lblTitle.snp_bottom).offset(12)
+            }
+            lblContent.setFontAndTextColor(12, aTextcolor: UIColor.SubTextColor())
+            lblContent.numberOfLines = 0
         }
-        lblContent.font = UIFont.systemFontOfSize(12)
-        lblContent.textColor = UIColor.blackColor()
-        lblContent.numberOfLines = 0
         lblContent.text = ticketDescription.content
 
     }

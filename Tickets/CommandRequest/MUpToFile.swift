@@ -23,8 +23,8 @@ class MUpToFile: TopModel {
         
         var strUptoken = isNeedRequestToGetUptoken()
         //        查看是否有有效的牵牛token,没有
-        
-                strUptoken = "__vafSsRk-eaqDK1734Q1XxoRrcglFc2JOKGPlhD:DeIzQ2dCLn80hTG1i37eA15kJXU=:eyJzY29wZSI6Im1vcnRyZWQtZGV2IiwiZGVhZGxpbmUiOjE0NjQ3MTA2NDl9"
+//        
+//                strUptoken = "__vafSsRk-eaqDK1734Q1XxoRrcglFc2JOKGPlhD:DeIzQ2dCLn80hTG1i37eA15kJXU=:eyJzY29wZSI6Im1vcnRyZWQtZGV2IiwiZGVhZGxpbmUiOjE0NjQ3MTA2NDl9"
         if strUptoken == "" {
             getUptoken({ (upToken) -> Void in
                 let upManager = QNUploadManager()
