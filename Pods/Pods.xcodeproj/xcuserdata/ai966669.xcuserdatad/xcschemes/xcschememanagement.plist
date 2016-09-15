@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-TicketsTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TicketsUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Qiniu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +57,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>34D72D1A63A83EB9D82056A9471CD062</key>
+		<key>08BE74C84E8B8C3423C5F1F87F95CBAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3050C6C699938EDA7B6D340BC36B026B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6FB6564D6F5A5156BB839C1A3A3337C0</key>
+		<key>58CAE8C500881901F86F5154BE623A2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>594C72229D970963F925C381A04EFF48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96B08592C95EB7BDD10B2068005CD3BD</key>
+		<key>9DEAA1F32DD83FDA23B54F2EAF584E5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCF7295529D8710083E84FF8C600C37A</key>
+		<key>E55346471C6B4841CA06F70EE341CEDA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D92E5252622B595FB7E5EBB2E6561D2D</key>
+		<key>EC7D29856C6492B9598225AFD63EEFDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

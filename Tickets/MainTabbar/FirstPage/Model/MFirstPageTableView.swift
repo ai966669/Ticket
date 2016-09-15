@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class Banner:NSObject {
     var image:String=""
     var id = -1

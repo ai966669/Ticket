@@ -14,13 +14,30 @@ protocol LoginViewControllerDelegate:NSObjectProtocol{
 class LoginViewController: UIViewController {
     @IBOutlet var txtFldPhone: UITextField!
     @IBOutlet var txtFldPsw: UITextField!
+    @IBOutlet var btnLogin: UIButton!
+    @IBOutlet var btnForgetPsw: UIButton!
+    @IBOutlet var btnRegist: UIButton!
     var delegate:LoginViewControllerDelegate?
     var fromInside=false
+
     @IBAction func showRegist(sender: AnyObject) {
         let aStroyBoardSource = UIStoryboard(name: "LoginAndRegist", bundle: nil)
-        let aReigistViewController=aStroyBoardSource.instantiateViewControllerWithIdentifier("ReigistViewController")
-        self.navigationController?.pushViewController(aReigistViewController, animated: true)
+        let reigistViewController=aStroyBoardSource.instantiateViewControllerWithIdentifier("ReigistViewController")
+        if let  temp = reigistViewController as? RegistViewController{
+            navigationController?.pushViewController(reigistViewController, animated: true)
+            temp.isRegistView = true
+        }
     }
+    
+    @IBAction func showResetPsw(sender: AnyObject) {
+        let aStroyBoardSource = UIStoryboard(name: "LoginAndRegist", bundle: nil)
+        let resetPswVc = aStroyBoardSource.instantiateViewControllerWithIdentifier("ReigistViewController")
+        if let  temp = resetPswVc as? RegistViewController{
+            navigationController?.pushViewController(temp, animated: true)
+            temp.isRegistView = false
+        }
+    }
+    
     @IBAction func tryLogin(sender: AnyObject) {
         UserModel.loginByPsw(txtFldPhone.text!, password:txtFldPsw.text! , success: {_ in
             if  let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
@@ -42,8 +59,18 @@ class LoginViewController: UIViewController {
         if fromInside{
             navigationItem.rightBarButtonItem=UIButton.createBackButton("", action: #selector(LoginViewController.loginCancel),target:self)
         }
-        view.backgroundColor=UIColor.yellowColor()
+        drawView()
     }
+    
+    func  drawView(){
+        btnLogin.layer.cornerRadius = 3;
+        btnLogin.backgroundColor = UIColor.TopicColor()
+        btnLogin.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        btnForgetPsw.setTitleColor(UIColor.ColorByRGB(153, G: 153, B:153 , A: 153), forState: UIControlState.Normal)
+        btnRegist.setTitleColor(UIColor.ColorByRGB(153, G: 153, B:153 , A: 153), forState: UIControlState.Normal)
+        
+    }
+    
     func loginCancel()  {
         if (delegate != nil){
             delegate!.loginCancel()

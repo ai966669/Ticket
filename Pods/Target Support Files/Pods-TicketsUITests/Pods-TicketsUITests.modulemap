@@ -1,0 +1,6 @@
+framework module Pods_TicketsUITests {
+  umbrella header "Pods-TicketsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

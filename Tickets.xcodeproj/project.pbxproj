@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085E83B0A85A2FA45D95AEC2 /* Pods_TicketsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EC4F56763EE6FA09ABE202 /* Pods_TicketsUITests.framework */; };
+		1E288A91BAA27576A6DEE91B /* Pods_TicketsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5AA834AD338BFC5F8D8516E /* Pods_TicketsTests.framework */; };
 		450EBC451CD8E86D004ADD37 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450EBC441CD8E86D004ADD37 /* FirstPageViewController.swift */; };
 		45118D221D0D876000B4E2E3 /* CouponTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45118D211D0D876000B4E2E3 /* CouponTableView.swift */; };
 		45118D241D0D89AD00B4E2E3 /* MCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45118D231D0D89AD00B4E2E3 /* MCouponViewController.swift */; };
@@ -34,6 +36,15 @@
 		4549AF8E1D1847E7008DD8C3 /* MUpToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF821D1847E7008DD8C3 /* MUpToFile.swift */; };
 		4549AF8F1D1847E7008DD8C3 /* NZZCheckingOfInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF841D1847E7008DD8C3 /* NZZCheckingOfInput.m */; };
 		4549AF901D1847E7008DD8C3 /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549AF851D1847E7008DD8C3 /* TopModel.swift */; };
+		4564723A1D5EEC2300B0378B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472311D5EEC2300B0378B /* AFNetworking.framework */; };
+		4564723B1D5EEC2300B0378B /* CocoaSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472321D5EEC2300B0378B /* CocoaSecurity.framework */; };
+		4564723C1D5EEC2300B0378B /* HappyDNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472331D5EEC2300B0378B /* HappyDNS.framework */; };
+		4564723D1D5EEC2300B0378B /* Pods_TicketsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472341D5EEC2300B0378B /* Pods_TicketsTests.framework */; };
+		4564723E1D5EEC2300B0378B /* Pods_TicketsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472351D5EEC2300B0378B /* Pods_TicketsUITests.framework */; };
+		4564723F1D5EEC2300B0378B /* Qiniu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472361D5EEC2300B0378B /* Qiniu.framework */; };
+		456472401D5EEC2300B0378B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472371D5EEC2300B0378B /* SDWebImage.framework */; };
+		456472411D5EEC2300B0378B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472381D5EEC2300B0378B /* SnapKit.framework */; };
+		456472421D5EEC2300B0378B /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456472391D5EEC2300B0378B /* SVProgressHUD.framework */; };
 		45662C711CF4B399005E0807 /* IMG_7064.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 45662C701CF4B399005E0807 /* IMG_7064.PNG */; };
 		45662C731CF4B6BB005E0807 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45662C721CF4B6BB005E0807 /* test.jpg */; };
 		4567DDED1D27FDE900AC7B2E /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567DDEB1D27FDE900AC7B2E /* OrderDetailViewController.swift */; };
@@ -80,7 +91,7 @@
 		45DFF16F1CD33CDA002C0814 /* TKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DFF16E1CD33CDA002C0814 /* TKConfig.swift */; };
 		45F681391D0F05AC004C1433 /* CoponTableViewHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F681381D0F05AC004C1433 /* CoponTableViewHeadView.swift */; };
 		45FD9DFF1D1C4A65002503C0 /* UniversialWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FD9DFE1D1C4A65002503C0 /* UniversialWebViewViewController.swift */; };
-		B1B36D46CB80C1A331D6C8EE /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AE7CC6C80A45864B34B467 /* Pods_Tickets.framework */; };
+		DCED3ABB53B9E22F858E73E5 /* Pods_Tickets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8A775F9EA81998ED7C1C6E /* Pods_Tickets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +112,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EC4F56763EE6FA09ABE202 /* Pods_TicketsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CB78B838E61DECE94EA2C51 /* Pods-TicketsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		247381EA7D8954918FB8ED33 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 		450EBC441CD8E86D004ADD37 /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		45118D211D0D876000B4E2E3 /* CouponTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponTableView.swift; sourceTree = "<group>"; };
 		45118D231D0D89AD00B4E2E3 /* MCouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCouponViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +144,16 @@
 		4549AF831D1847E7008DD8C3 /* NZZCheckingOfInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZZCheckingOfInput.h; sourceTree = "<group>"; };
 		4549AF841D1847E7008DD8C3 /* NZZCheckingOfInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZZCheckingOfInput.m; sourceTree = "<group>"; };
 		4549AF851D1847E7008DD8C3 /* TopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
+		456472301D5EE94700B0378B /* Tickets-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tickets-Bridging-Header.h"; sourceTree = "<group>"; };
+		456472311D5EEC2300B0378B /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		456472321D5EEC2300B0378B /* CocoaSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaSecurity.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/CocoaSecurity/CocoaSecurity.framework"; sourceTree = "<group>"; };
+		456472331D5EEC2300B0378B /* HappyDNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HappyDNS.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/HappyDNS/HappyDNS.framework"; sourceTree = "<group>"; };
+		456472341D5EEC2300B0378B /* Pods_TicketsTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TicketsTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TicketsTests.framework"; sourceTree = "<group>"; };
+		456472351D5EEC2300B0378B /* Pods_TicketsUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TicketsUITests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TicketsUITests.framework"; sourceTree = "<group>"; };
+		456472361D5EEC2300B0378B /* Qiniu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Qiniu.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/Qiniu/Qiniu.framework"; sourceTree = "<group>"; };
+		456472371D5EEC2300B0378B /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework"; sourceTree = "<group>"; };
+		456472381D5EEC2300B0378B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		456472391D5EEC2300B0378B /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "../../../../workspace/黑卡业务/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework"; sourceTree = "<group>"; };
 		45662C701CF4B399005E0807 /* IMG_7064.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_7064.PNG; sourceTree = "<group>"; };
 		45662C721CF4B6BB005E0807 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		4567DDEB1D27FDE900AC7B2E /* OrderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +165,6 @@
 		456AD7DA1CF5D6D0003E3563 /* HWJNavControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWJNavControllerViewController.swift; sourceTree = "<group>"; };
 		456AD7DC1CF5D8C9003E3563 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		456AD7E11CF5E4A3003E3563 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		456D146C1CD3A12D005EE9E0 /* Tickets-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tickets-Bridging-Header.h"; path = "CommandMethod/Tickets-Bridging-Header.h"; sourceTree = "<group>"; };
 		456DB1821D2435BE00B58FB4 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		456DB1841D2437E100B58FB4 /* TagViewInCouponDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewInCouponDetailView.swift; sourceTree = "<group>"; };
 		4573A3AE1CDF99F2008A2C00 /* RegstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegstViewController.swift; sourceTree = "<group>"; };
@@ -184,9 +207,12 @@
 		45DFF16E1CD33CDA002C0814 /* TKConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKConfig.swift; sourceTree = "<group>"; };
 		45F681381D0F05AC004C1433 /* CoponTableViewHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoponTableViewHeadView.swift; sourceTree = "<group>"; };
 		45FD9DFE1D1C4A65002503C0 /* UniversialWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversialWebViewViewController.swift; sourceTree = "<group>"; };
-		95AE7CC6C80A45864B34B467 /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A774B630C1D2830EB429D62E /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
-		C7E7391D8021452F5AB99DD4 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		647311BDA3801DDD321E95B4 /* Pods-TicketsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65F74A5BA1EE5F70E0DAD110 /* Pods-TicketsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F8A775F9EA81998ED7C1C6E /* Pods_Tickets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tickets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52E0F0EB1F8BCF646052CE1 /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		C5AA834AD338BFC5F8D8516E /* Pods_TicketsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33D581155A281DF8D3A8AD9 /* Pods-TicketsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +220,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1B36D46CB80C1A331D6C8EE /* Pods_Tickets.framework in Frameworks */,
+				4564723A1D5EEC2300B0378B /* AFNetworking.framework in Frameworks */,
+				4564723B1D5EEC2300B0378B /* CocoaSecurity.framework in Frameworks */,
+				4564723C1D5EEC2300B0378B /* HappyDNS.framework in Frameworks */,
+				4564723D1D5EEC2300B0378B /* Pods_TicketsTests.framework in Frameworks */,
+				4564723E1D5EEC2300B0378B /* Pods_TicketsUITests.framework in Frameworks */,
+				4564723F1D5EEC2300B0378B /* Qiniu.framework in Frameworks */,
+				456472401D5EEC2300B0378B /* SDWebImage.framework in Frameworks */,
+				456472411D5EEC2300B0378B /* SnapKit.framework in Frameworks */,
+				456472421D5EEC2300B0378B /* SVProgressHUD.framework in Frameworks */,
+				DCED3ABB53B9E22F858E73E5 /* Pods_Tickets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E288A91BAA27576A6DEE91B /* Pods_TicketsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085E83B0A85A2FA45D95AEC2 /* Pods_TicketsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,13 +437,13 @@
 		45DFF12B1CD338A2002C0814 = {
 			isa = PBXGroup;
 			children = (
-				456AD7E01CF5E47D003E3563 /* Supporting Files */,
 				45DFF1361CD338A2002C0814 /* Tickets */,
 				45DFF14D1CD338A2002C0814 /* TicketsTests */,
 				45DFF1581CD338A2002C0814 /* TicketsUITests */,
 				45DFF1351CD338A2002C0814 /* Products */,
-				A14318F5C6F9F3216776426C /* Pods */,
-				720B302FC5D7BAB8F70BEDD1 /* Frameworks */,
+				C403FE94698A7C8EC9D6D429 /* Pods */,
+				A0E28B3C9EBC71C4E2085AE6 /* Frameworks */,
+				456AD7E01CF5E47D003E3563 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -429,8 +466,8 @@
 				458A709C1CE21AAC00B76DA1 /* CommandRequest */,
 				45DFF1671CD33A26002C0814 /* LoginAndRegist */,
 				45DFF1681CD33A26002C0814 /* MainTabbar */,
+				456472301D5EE94700B0378B /* Tickets-Bridging-Header.h */,
 				45DFF1371CD338A2002C0814 /* AppDelegate.swift */,
-				456D146C1CD3A12D005EE9E0 /* Tickets-Bridging-Header.h */,
 				45DFF13D1CD338A2002C0814 /* MainTabBar.storyboard */,
 				45DFF1421CD338A2002C0814 /* LaunchScreen.storyboard */,
 				45DFF1451CD338A2002C0814 /* Info.plist */,
@@ -490,19 +527,34 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
-		720B302FC5D7BAB8F70BEDD1 /* Frameworks */ = {
+		A0E28B3C9EBC71C4E2085AE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95AE7CC6C80A45864B34B467 /* Pods_Tickets.framework */,
+				456472311D5EEC2300B0378B /* AFNetworking.framework */,
+				456472321D5EEC2300B0378B /* CocoaSecurity.framework */,
+				456472331D5EEC2300B0378B /* HappyDNS.framework */,
+				456472341D5EEC2300B0378B /* Pods_TicketsTests.framework */,
+				456472351D5EEC2300B0378B /* Pods_TicketsUITests.framework */,
+				456472361D5EEC2300B0378B /* Qiniu.framework */,
+				456472371D5EEC2300B0378B /* SDWebImage.framework */,
+				456472381D5EEC2300B0378B /* SnapKit.framework */,
+				456472391D5EEC2300B0378B /* SVProgressHUD.framework */,
+				9F8A775F9EA81998ED7C1C6E /* Pods_Tickets.framework */,
+				C5AA834AD338BFC5F8D8516E /* Pods_TicketsTests.framework */,
+				04EC4F56763EE6FA09ABE202 /* Pods_TicketsUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A14318F5C6F9F3216776426C /* Pods */ = {
+		C403FE94698A7C8EC9D6D429 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C7E7391D8021452F5AB99DD4 /* Pods-Tickets.debug.xcconfig */,
-				A774B630C1D2830EB429D62E /* Pods-Tickets.release.xcconfig */,
+				B52E0F0EB1F8BCF646052CE1 /* Pods-Tickets.debug.xcconfig */,
+				247381EA7D8954918FB8ED33 /* Pods-Tickets.release.xcconfig */,
+				647311BDA3801DDD321E95B4 /* Pods-TicketsTests.debug.xcconfig */,
+				65F74A5BA1EE5F70E0DAD110 /* Pods-TicketsTests.release.xcconfig */,
+				1CB78B838E61DECE94EA2C51 /* Pods-TicketsUITests.debug.xcconfig */,
+				E33D581155A281DF8D3A8AD9 /* Pods-TicketsUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -514,12 +566,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45DFF15E1CD338A2002C0814 /* Build configuration list for PBXNativeTarget "Tickets" */;
 			buildPhases = (
-				1776B44E31B7F692C51B9E40 /* Check Pods Manifest.lock */,
+				F3BC11B0DDA6C355475F88FD /* [CP] Check Pods Manifest.lock */,
 				45DFF1301CD338A2002C0814 /* Sources */,
 				45DFF1311CD338A2002C0814 /* Frameworks */,
 				45DFF1321CD338A2002C0814 /* Resources */,
-				9E709061770D673CC6A50E2F /* Embed Pods Frameworks */,
-				D158109D71F3A351EDCC86E6 /* Copy Pods Resources */,
+				E7EE9447D4F1EC64F15B982E /* [CP] Embed Pods Frameworks */,
+				2B84227E985100F8F9062870 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -534,9 +586,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45DFF1611CD338A2002C0814 /* Build configuration list for PBXNativeTarget "TicketsTests" */;
 			buildPhases = (
+				DE312EDFDCB69DDF5BAF01D0 /* [CP] Check Pods Manifest.lock */,
 				45DFF1461CD338A2002C0814 /* Sources */,
 				45DFF1471CD338A2002C0814 /* Frameworks */,
 				45DFF1481CD338A2002C0814 /* Resources */,
+				D082F891BFA071DD319526BF /* [CP] Embed Pods Frameworks */,
+				CB4F331959954E05DE4D395A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -552,9 +607,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45DFF1641CD338A2002C0814 /* Build configuration list for PBXNativeTarget "TicketsUITests" */;
 			buildPhases = (
+				A80D721232809427751E79BA /* [CP] Check Pods Manifest.lock */,
 				45DFF1511CD338A2002C0814 /* Sources */,
 				45DFF1521CD338A2002C0814 /* Frameworks */,
 				45DFF1531CD338A2002C0814 /* Resources */,
+				8368199622CC1A64CB8485C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -645,14 +702,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1776B44E31B7F692C51B9E40 /* Check Pods Manifest.lock */ = {
+		2B84227E985100F8F9062870 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8368199622CC1A64CB8485C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A80D721232809427751E79BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,14 +747,59 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9E709061770D673CC6A50E2F /* Embed Pods Frameworks */ = {
+		CB4F331959954E05DE4D395A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D082F891BFA071DD319526BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE312EDFDCB69DDF5BAF01D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7EE9447D4F1EC64F15B982E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,19 +807,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D158109D71F3A351EDCC86E6 /* Copy Pods Resources */ = {
+		F3BC11B0DDA6C355475F88FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -899,7 +1031,7 @@
 		};
 		45DFF15F1CD338A2002C0814 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7E7391D8021452F5AB99DD4 /* Pods-Tickets.debug.xcconfig */;
+			baseConfigurationReference = B52E0F0EB1F8BCF646052CE1 /* Pods-Tickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -909,6 +1041,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Tickets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -916,15 +1049,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred0808;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7175e356-96b8-4056-a24c-16da507ce887";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tickets/CommandMethod/Tickets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ai966669/Desktop/dream/理财/ticket/Tickets/Tickets-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "${SRCROOT}";
 			};
 			name = Debug;
 		};
 		45DFF1601CD338A2002C0814 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A774B630C1D2830EB429D62E /* Pods-Tickets.release.xcconfig */;
+			baseConfigurationReference = 247381EA7D8954918FB8ED33 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -934,20 +1068,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Tickets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nifeng.moretred0808;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tickets/CommandMethod/Tickets-Bridging-Header.h";
+				PROVISIONING_PROFILE = "782793be-775f-41c1-b9cf-35078c72458f";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ai966669/Desktop/dream/理财/ticket/Tickets/Tickets-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "${SRCROOT}";
 			};
 			name = Release;
 		};
 		45DFF1621CD338A2002C0814 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647311BDA3801DDD321E95B4 /* Pods-TicketsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TicketsTests/Info.plist;
@@ -960,6 +1097,7 @@
 		};
 		45DFF1631CD338A2002C0814 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F74A5BA1EE5F70E0DAD110 /* Pods-TicketsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TicketsTests/Info.plist;
@@ -972,6 +1110,7 @@
 		};
 		45DFF1651CD338A2002C0814 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB78B838E61DECE94EA2C51 /* Pods-TicketsUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TicketsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -983,6 +1122,7 @@
 		};
 		45DFF1661CD338A2002C0814 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33D581155A281DF8D3A8AD9 /* Pods-TicketsUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TicketsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

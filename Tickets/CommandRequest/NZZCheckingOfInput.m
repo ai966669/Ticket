@@ -7,7 +7,8 @@
 //
 
 #import "NZZCheckingOfInput.h"
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "SVProgressHUD.h"
+
 @implementation NZZCheckingOfInput
 
 + (BOOL)checkComment:(NSString *)comment showGrayHUD:(BOOL)showHUD textToShow:(NSString *)text{

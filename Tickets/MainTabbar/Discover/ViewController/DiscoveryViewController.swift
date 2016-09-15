@@ -10,18 +10,10 @@ import UIKit
 
 class DiscoveryViewController: UIViewController {
     var webView:UIWebView!
-    var aUISegmentedControl:UISegmentedControl!
     var scrollDiscory:UIScrollView!
     private func initWvShow(){
         webView=UIWebView(frame: CGRectMake(0,0,view.frame.width,view.frame.height))
         webView.delegate = self
-////        webView.backgroundColor = UIColor.ColorNav()
-//        let request = NSMutableURLRequest(URL:NSURL.init(string: "www.baidu.com")!)
-//        request.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
-//        request.HTTPMethod = "POST"
-//        let customAllowedSet =  NSCharacterSet(charactersInString:"`#%^{}\"[]|\\<> +").invertedSet
-//        paramsInStr=paramsInStr.stringByAddingPercentEncodingWithAllowedCharacters(customAllowedSet)!
-//        request.HTTPBody = paramsInStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
         let request = NSURLRequest.init(URL: NSURL.init(string: "http://121.43.63.65/activity/activity/index")!)
         webView.loadRequest(request)
         view.addSubview(webView)
@@ -38,26 +30,15 @@ class DiscoveryViewController: UIViewController {
         
     }
     func initNavigationBar(){
-        if let tabBarController = tabBarController{
-            aUISegmentedControl=UISegmentedControl.init(items: ["热门活动","理财超市","每日任务"])
-            aUISegmentedControl.frame=CGRectMake((ScreenW-120)/2, 0, 120, 50)
-            aUISegmentedControl.tintColor=UIColor.blueColor()
-            aUISegmentedControl.backgroundColor=UIColor.blueColor()
-            tabBarController.navigationItem.titleView=aUISegmentedControl
-        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-//    override func viewWillDisappear(animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        aUISegmentedControl.hidden=true
-//    }
-//    override func viewWillAppear(animated: Bool) {
-//        super.viewWillAppear(animated)
-//        aUISegmentedControl.hidden=false
-//    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true,animated: animated)
+    }
     /*
     // MARK: - Navigation
 
